@@ -96,7 +96,7 @@ const CheckInScreen: React.FC = () => {
 
         <div>
           <label htmlFor="workplace" className="block text-sm font-medium text-gray-700 mb-1">
-            What type of workplace are you from?
+            What type of workplace do you work in?
           </label>
           <input
             type="text"
