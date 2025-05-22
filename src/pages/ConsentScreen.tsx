@@ -19,9 +19,7 @@ const ConsentScreen: React.FC = () => {
       
       <div className="prose prose-sm mb-6">
         <Trans i18nKey="consent.intro" />
-        <div className="bg-gray-50 p-4 rounded-md my-4 text-sm">
-          <Trans i18nKey="consent.fullText" />
-        </div>
+        <div className="bg-gray-50 p-4 rounded-md my-4 text-sm" dangerouslySetInnerHTML={{ __html: t('consent.fullText') }} />
         
         <div className="flex items-start mt-6">
           <div className="flex items-center h-5">
