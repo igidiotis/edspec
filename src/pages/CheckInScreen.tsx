@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import Button from '../components/Button';
+import { useTranslation } from 'react-i18next';
 
 const CheckInScreen: React.FC = () => {
   const { setCurrentStep, checkInData, setCheckInData } = useApp();
-  
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     occupation: checkInData.occupation || '',
     otherOccupation: checkInData.otherOccupation || '',
@@ -32,13 +33,13 @@ const CheckInScreen: React.FC = () => {
   
   return (
     <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-sm p-6 animate-fade-in">
-      <h2 className="text-xl font-semibold mb-2">Check-in</h2>
-      <p className="text-gray-600 mb-6">Let's start with a quick check-in before we begin.</p>
+      <h2 className="text-xl font-semibold mb-2">{t('checkin.title')}</h2>
+      <p className="text-gray-600 mb-6">{t('checkin.intro')}</p>
       
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label htmlFor="occupation" className="block text-sm font-medium text-gray-700 mb-1">
-            Occupation
+            {t('checkin.occupation')}
           </label>
           <select
             id="occupation"
@@ -48,18 +49,18 @@ const CheckInScreen: React.FC = () => {
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
             required
           >
-            <option value="" disabled>Select your occupation</option>
-            <option value="Teacher">Teacher</option>
-            <option value="Student">Student</option>
-            <option value="Researcher">Researcher</option>
-            <option value="Other">Other</option>
+            <option value="" disabled>{t('checkin.occupationPlaceholder')}</option>
+            <option value="Teacher">{t('checkin.teacher')}</option>
+            <option value="Student">{t('checkin.student')}</option>
+            <option value="Researcher">{t('checkin.researcher')}</option>
+            <option value="Other">{t('checkin.other')}</option>
           </select>
         </div>
 
         {formData.occupation === 'Other' && (
           <div>
             <label htmlFor="otherOccupation" className="block text-sm font-medium text-gray-700 mb-1">
-              Please specify your occupation
+              {t('checkin.otherOccupation')}
             </label>
             <input
               type="text"
@@ -75,7 +76,7 @@ const CheckInScreen: React.FC = () => {
 
         <div>
           <label htmlFor="discipline" className="block text-sm font-medium text-gray-700 mb-1">
-            Subject discipline
+            {t('checkin.discipline')}
           </label>
           <input
             type="text"
@@ -84,7 +85,7 @@ const CheckInScreen: React.FC = () => {
             value={formData.discipline}
             onChange={handleChange}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-            placeholder="e.g. Education, engineering, mathematics"
+            placeholder={t('checkin.disciplinePlaceholder')}
             required
           />
         </div>
@@ -94,13 +95,13 @@ const CheckInScreen: React.FC = () => {
             onClick={() => setCurrentStep('consent')} 
             variant="outline"
           >
-            Back
+            {t('back')}
           </Button>
           <Button 
             type="submit" 
             disabled={!isComplete}
           >
-            Continue
+            {t('continue')}
           </Button>
         </div>
       </form>

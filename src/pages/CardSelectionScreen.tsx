@@ -3,10 +3,12 @@ import { useApp } from '../context/AppContext';
 import Button from '../components/Button';
 import ScenarioCard from '../components/ScenarioCard';
 import scenarioCards from '../data/scenarioCards';
+import { useTranslation } from 'react-i18next';
 
 const CardSelectionScreen: React.FC = () => {
   const { setCurrentStep, selectedCards, setSelectedCards } = useApp();
   const [error, setError] = useState('');
+  const { t } = useTranslation();
   
   // Reset error when selection changes
   useEffect(() => {
@@ -25,7 +27,7 @@ const CardSelectionScreen: React.FC = () => {
 
   const handleContinue = () => {
     if (selectedCards.length === 0) {
-      setError('Please select at least one theme');
+      setError(t('cards.error'));
       return;
     }
     setCurrentStep('writing');
@@ -41,9 +43,9 @@ const CardSelectionScreen: React.FC = () => {
   
   return (
     <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-sm p-6 animate-fadeIn">
-      <h2 className="text-xl font-semibold mb-2">Select Themes</h2>
+      <h2 className="text-xl font-semibold mb-2">{t('cards.title')}</h2>
       <p className="text-gray-600 mb-6">
-        Select one or more themes that you are interested in and will inspire your story about the future of education.
+        {t('cards.intro')}
       </p>
       
       {error && (
@@ -92,13 +94,13 @@ const CardSelectionScreen: React.FC = () => {
           onClick={() => setCurrentStep('checkin')} 
           variant="outline"
         >
-          Back
+          {t('back')}
         </Button>
         <Button 
           onClick={handleContinue}
           disabled={selectedCards.length === 0}
         >
-          Continue
+          {t('continue')}
         </Button>
       </div>
     </div>

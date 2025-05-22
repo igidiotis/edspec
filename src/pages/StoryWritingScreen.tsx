@@ -4,6 +4,7 @@ import Button from '../components/Button';
 import Notification from '../components/Notification';
 import writingPrompts from '../data/writingPrompts';
 import scenarioCards from '../data/scenarioCards';
+import { useTranslation } from 'react-i18next';
 
 const StoryWritingScreen: React.FC = () => {
   const { 
@@ -12,7 +13,7 @@ const StoryWritingScreen: React.FC = () => {
     storyContent, 
     setStoryContent 
   } = useApp();
-  
+  const { t } = useTranslation();
   const [wordCount, setWordCount] = useState(0);
   const [activePrompts, setActivePrompts] = useState<string[]>([]);
   const [dismissedPrompts, setDismissedPrompts] = useState<string[]>([]);
@@ -55,12 +56,12 @@ const StoryWritingScreen: React.FC = () => {
         return card ? card.title : '';
       })
       .filter(Boolean)
-      .join(' and ');
+      .join(` ${t('and')} `);
   };
   
   const handleSubmit = () => {
     if (wordCount < 50) {
-      alert('Please write at least 50 words for your story.');
+      alert(t('writing.error'));
       return;
     }
     setCurrentStep('feedback');
@@ -68,10 +69,11 @@ const StoryWritingScreen: React.FC = () => {
   
   return (
     <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-sm p-6 animate-fadeIn">
-      <h2 className="text-xl font-semibold mb-2">Write Your Story</h2>
+      <h2 className="text-xl font-semibold mb-2">{t('writing.title')}</h2>
       <p className="text-gray-600 mb-6">
-        Inspired by {selectedCards.includes('wildcard') ? 'your own vision' : getSelectedThemes()}, 
-        write a speculative story about the future of AI in education.
+        {t('writing.intro', {
+          inspiration: selectedCards.includes('wildcard') ? t('writing.ownVision') : getSelectedThemes()
+        })}
       </p>
       
       <div className="flex flex-col-reverse lg:flex-row gap-6">
@@ -82,11 +84,11 @@ const StoryWritingScreen: React.FC = () => {
               value={storyContent}
               onChange={(e) => setStoryContent(e.target.value)}
               className="w-full h-64 p-4 border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500"
-              placeholder="In the year 2040, education has transformed in ways we once could only imagine..."
+              placeholder={t('writing.placeholder')}
             ></textarea>
             <div className="text-sm text-gray-500 mt-2 flex justify-between">
-              <span>Word count: {wordCount}</span>
-              <span>Min. recommended: 150 words</span>
+              <span>{t('writing.wordCount', { count: wordCount })}</span>
+              <span>{t('writing.minWords')}</span>
             </div>
           </div>
           
@@ -95,13 +97,13 @@ const StoryWritingScreen: React.FC = () => {
               onClick={() => setCurrentStep('cards')} 
               variant="outline"
             >
-              Back
+              {t('back')}
             </Button>
             <Button 
               onClick={handleSubmit}
               disabled={wordCount < 50}
             >
-              Submit Story
+              {t('writing.submit')}
             </Button>
           </div>
         </div>

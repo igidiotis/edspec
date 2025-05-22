@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import Button from '../components/Button';
 import { Download } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const FeedbackScreen: React.FC = () => {
   const { setCurrentStep, storyContent } = useApp();
+  const { t } = useTranslation();
   
   const [formData, setFormData] = useState({
     wantsInterview: false,
@@ -47,12 +49,12 @@ const FeedbackScreen: React.FC = () => {
     e.preventDefault();
     
     if (!formData.storyMessage) {
-      alert('Please provide a message or insight about your story.');
+      alert(t('feedback.errorMessage'));
       return;
     }
 
     if (formData.wantsInterview && !formData.email) {
-      alert('Email is required if you want to participate in interviews.');
+      alert(t('feedback.errorEmail'));
       return;
     }
 
@@ -61,9 +63,9 @@ const FeedbackScreen: React.FC = () => {
 
   return (
     <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-sm p-6 animate-fadeIn">
-      <h2 className="text-xl font-semibold mb-2">Share Your Feedback</h2>
+      <h2 className="text-xl font-semibold mb-2">{t('feedback.title')}</h2>
       <p className="text-gray-600 mb-6">
-        Help us understand your perspective on the future of AI in education.
+        {t('feedback.intro')}
       </p>
 
       <form onSubmit={handleSubmit} className="space-y-6">
@@ -77,13 +79,13 @@ const FeedbackScreen: React.FC = () => {
               className="mt-1 rounded border-gray-300 text-blue-500 focus:ring-blue-500"
             />
             <label htmlFor="wantsInterview" className="text-sm">
-              I want to be further contacted to participate in short interviews or focus group discussions related to the topic of AI and education
+              {t('feedback.interview')}
             </label>
           </div>
 
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-              Email Address
+              {t('feedback.email')}
             </label>
             <input
               type="email"
@@ -96,14 +98,14 @@ const FeedbackScreen: React.FC = () => {
             />
             {!formData.wantsInterview && (
               <p className="mt-1 text-sm text-gray-500">
-                Providing your email address will only be used for communications related to this research and will not undermine the anonymity of the data collected through the tool.
+                {t('feedback.emailNote')}
               </p>
             )}
           </div>
 
           <div>
             <label htmlFor="storyMessage" className="block text-sm font-medium text-gray-700 mb-1">
-              In one sentence: What message or insight do you think your story sends about the future of education? *
+              {t('feedback.storyMessage')}
             </label>
             <textarea
               id="storyMessage"
@@ -118,7 +120,7 @@ const FeedbackScreen: React.FC = () => {
 
           <div>
             <label htmlFor="aiViewsImpact" className="block text-sm font-medium text-gray-700 mb-1">
-              How did writing a fictional scenario shape or shift your views about AI in education?
+              {t('feedback.aiViewsImpact')}
             </label>
             <textarea
               id="aiViewsImpact"
@@ -132,7 +134,7 @@ const FeedbackScreen: React.FC = () => {
 
           <div>
             <label htmlFor="futureVisionType" className="block text-sm font-medium text-gray-700 mb-1">
-              Did your story reflect a utopian, dystopian, or hybrid vision of the future? Why do you think that is?
+              {t('feedback.futureVisionType')}
             </label>
             <textarea
               id="futureVisionType"
@@ -146,7 +148,7 @@ const FeedbackScreen: React.FC = () => {
 
           <div>
             <label htmlFor="storySurprises" className="block text-sm font-medium text-gray-700 mb-1">
-              What surprised you about the story you created or the direction it took?
+              {t('feedback.storySurprises')}
             </label>
             <textarea
               id="storySurprises"
@@ -160,7 +162,7 @@ const FeedbackScreen: React.FC = () => {
 
           <div>
             <label htmlFor="realWorldApplications" className="block text-sm font-medium text-gray-700 mb-1">
-              How might fictional scenarios like the one you created be used in real-world educational planning or policy-making?
+              {t('feedback.realWorldApplications')}
             </label>
             <textarea
               id="realWorldApplications"
@@ -180,7 +182,7 @@ const FeedbackScreen: React.FC = () => {
             className="w-full sm:w-auto"
           >
             <Download size={16} className="mr-2" />
-            Download Your Story
+            {t('feedback.download')}
           </Button>
           
           <div className="flex gap-4 w-full sm:w-auto">
@@ -189,13 +191,13 @@ const FeedbackScreen: React.FC = () => {
               variant="outline"
               className="flex-1 sm:flex-initial"
             >
-              Back
+              {t('back')}
             </Button>
             <Button 
               type="submit"
               className="flex-1 sm:flex-initial"
             >
-              Submit Feedback
+              {t('feedback.submit')}
             </Button>
           </div>
         </div>
