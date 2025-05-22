@@ -3,14 +3,6 @@ import { useApp } from '../context/AppContext';
 import Button from '../components/Button';
 import { useTranslation } from 'react-i18next';
 
-const rightsList = [
-  'Withdraw your consent without affecting the lawfulness of data processing already carried out before withdrawal.',
-  'Request access to your personal data.',
-  'Have your personal data corrected.',
-  'Have your personal data deleted.',
-  'Have the processing of your personal data restricted.'
-];
-
 const ConsentScreen: React.FC = () => {
   const { setCurrentStep, setHasConsented } = useApp();
   const [isChecked, setIsChecked] = useState(false);
@@ -25,15 +17,9 @@ const ConsentScreen: React.FC = () => {
     <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-sm p-6 animate-fade-in">
       <h2 className="text-xl font-semibold mb-6">{t('consent.title')}</h2>
       <div className="mb-6">
-        <div className="bg-gray-50 p-8 rounded-md my-4 text-base text-justify prose prose-base prose-ul:pl-6 prose-li:marker:text-blue-500" style={{ fontSize: '1.08rem', lineHeight: '2.1', textAlign: 'justify' }}>
-          <div dangerouslySetInnerHTML={{ __html: `${t('consent.intro')}<br/><br/>${t('consent.fullText').split('<rights-list/>')[0]}` }} />
-          <ul className="list-disc pl-6 my-4">
-            {rightsList.map((item, idx) => (
-              <li key={idx}>{item}</li>
-            ))}
-          </ul>
-          <div dangerouslySetInnerHTML={{ __html: t('consent.fullText').split('<rights-list/>')[1] }} />
-        </div>
+        <div className="bg-gray-50 p-8 rounded-md my-4 text-base text-justify prose prose-base prose-ul:pl-6 prose-li:marker:text-blue-500" style={{ fontSize: '1.08rem', lineHeight: '2.1', textAlign: 'justify' }}
+          dangerouslySetInnerHTML={{ __html: `${t('consent.intro')}<br/><br/>${t('consent.fullText')}` }}
+        />
         <div className="flex items-start mt-6">
           <div className="flex items-center h-5">
             <input
