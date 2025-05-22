@@ -48,7 +48,7 @@ const MainContent: React.FC = () => {
     <div className="max-w-6xl mx-auto p-4 md:p-6">
       <header className="mb-8 pt-4">
         <h1 className="text-2xl font-medium text-center text-gray-800">
-          Future of Education Research
+          Future of AI in Education
         </h1>
         <ProgressBar percentage={getProgressPercentage()} />
       </header>
@@ -56,7 +56,7 @@ const MainContent: React.FC = () => {
         {renderCurrentStep()}
       </main>
       <footer className="mt-12 text-center text-sm text-gray-500">
-        <p>© 2025 Education Research Initiative</p>
+      <p> 2025 Created by <a href="mailto:gidiotis@kth.se" target="_blank">Iosif Gidiotis</a></p>
       </footer>
     </div>
   );
