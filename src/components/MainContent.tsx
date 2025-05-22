@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useApp } from '../context/AppContext';
 import ConsentScreen from '../pages/ConsentScreen';
 import CheckInScreen from '../pages/CheckInScreen';
@@ -8,11 +8,32 @@ import FeedbackScreen from '../pages/FeedbackScreen';
 import ThankYouScreen from '../pages/ThankYouScreen';
 import ProgressBar from './ProgressBar';
 import { useTranslation, Trans } from 'react-i18next';
+import LanguageModal from './LanguageModal';
+import SwitchLanguageButton from './SwitchLanguageButton';
 
 const MainContent: React.FC = () => {
   const { currentStep } = useApp();
   const { t, i18n } = useTranslation();
+  const [showLangModal, setShowLangModal] = useState(false);
   
+  useEffect(() => {
+    // Show modal if no language is set in localStorage
+    const storedLang = localStorage.getItem('i18nextLng');
+    if (!storedLang || (storedLang !== 'en' && storedLang !== 'sv')) {
+      setShowLangModal(true);
+    }
+  }, []);
+
+  const handleSelectLanguage = (lang: 'en' | 'sv') => {
+    i18n.changeLanguage(lang);
+    setShowLangModal(false);
+    localStorage.setItem('i18nextLng', lang);
+  };
+
+  const handleSwitchLanguage = () => {
+    setShowLangModal(true);
+  };
+
   const renderCurrentStep = () => {
     switch (currentStep) {
       case 'consent':
@@ -42,31 +63,20 @@ const MainContent: React.FC = () => {
       'feedback': 80,
       'thanks': 100
     };
-    
     return steps[currentStep] || 0;
-  };
-
-  const handleLanguageSwitch = () => {
-    i18n.changeLanguage(i18n.language === 'sv' ? 'en' : 'sv');
   };
 
   return (
     <div className="max-w-6xl mx-auto p-4 md:p-6">
+      <LanguageModal open={showLangModal} onSelect={handleSelectLanguage} />
+      <SwitchLanguageButton onClick={handleSwitchLanguage} currentLang={i18n.language === 'sv' ? 'sv' : 'en'} />
       <header className="mb-8 pt-4">
         <h1 className="text-2xl font-medium text-center text-gray-800">
           {t('appTitle')}
         </h1>
-        <div className="flex justify-center mt-2">
-          <button
-            className="text-blue-600 underline text-sm focus:outline-none"
-            onClick={handleLanguageSwitch}
-          >
-            {t('swedishVersion')}
-          </button>
-        </div>
         <ProgressBar percentage={getProgressPercentage()} />
       </header>
-      <main>
+      <main style={{ filter: showLangModal ? 'blur(2px)' : undefined, pointerEvents: showLangModal ? 'none' : undefined }}>
         {renderCurrentStep()}
       </main>
       <footer className="mt-12 text-center text-sm text-gray-500">
