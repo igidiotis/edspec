@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import Button from '../components/Button';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 const ConsentScreen: React.FC = () => {
   const { setCurrentStep, setHasConsented } = useApp();
@@ -18,20 +18,9 @@ const ConsentScreen: React.FC = () => {
       <h2 className="text-xl font-semibold mb-6">{t('consent.title')}</h2>
       
       <div className="prose prose-sm mb-6">
-        <p>{t('consent.intro')}</p>
-        
+        <Trans i18nKey="consent.intro" />
         <div className="bg-gray-50 p-4 rounded-md my-4 text-sm">
-          <h3 className="font-medium mb-2">{t('consent.studyInfoTitle')}</h3>
-          <p>{t('consent.studyInfo')}</p>
-          <ul className="list-disc pl-5 space-y-1">
-            <li>{t('consent.studyInfo1')}</li>
-            <li>{t('consent.studyInfo2')}</li>
-            <li>{t('consent.studyInfo3')}</li>
-            <li>{t('consent.studyInfo4')}</li>
-          </ul>
-          
-          <h3 className="font-medium mt-4 mb-2">{t('consent.privacyTitle')}</h3>
-          <p>{t('consent.privacy')}</p>
+          <Trans i18nKey="consent.fullText" />
         </div>
         
         <div className="flex items-start mt-6">
