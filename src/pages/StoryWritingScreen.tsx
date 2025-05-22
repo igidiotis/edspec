@@ -51,10 +51,7 @@ const StoryWritingScreen: React.FC = () => {
   
   const getSelectedThemes = () => {
     return selectedCards
-      .map(cardId => {
-        const card = scenarioCards.find(c => c.id === cardId);
-        return card ? card.title : '';
-      })
+      .map(cardId => t(`cards.${cardId}.title`))
       .filter(Boolean)
       .join(` ${t('and')} `);
   };
@@ -111,14 +108,11 @@ const StoryWritingScreen: React.FC = () => {
         <div className="lg:w-72">
           <div className="sticky top-4 space-y-2">
             {activePrompts.map((promptId, index) => {
-              const prompt = writingPrompts.find(p => p.id === promptId);
-              if (!prompt) return null;
-              
               return (
                 <Notification
                   key={promptId}
-                  title={prompt.title}
-                  message={prompt.message}
+                  title={t(`prompt.${promptId}.title`)}
+                  message={t(`prompt.${promptId}.message`)}
                   onClose={() => handleDismissPrompt(promptId)}
                   delay={index * 300}
                 />
