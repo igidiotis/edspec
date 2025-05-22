@@ -17,8 +17,8 @@ const ConsentScreen: React.FC = () => {
     <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-sm p-6 animate-fade-in">
       <h2 className="text-xl font-semibold mb-6">{t('consent.title')}</h2>
       
-      <div className="prose prose-base mb-6">
-        <div className="bg-gray-50 p-8 rounded-md my-4 text-base" style={{ fontSize: '1.08rem', lineHeight: '2.1' }}
+      <div className="prose prose-base prose-ul:pl-6 prose-li:marker:text-blue-500 mb-6">
+        <div className="bg-gray-50 p-8 rounded-md my-4 text-base text-justify" style={{ fontSize: '1.08rem', lineHeight: '2.1', textAlign: 'justify' }}
           dangerouslySetInnerHTML={{ __html: `${t('consent.intro')}<br/><br/>${t('consent.fullText')}` }}
         />
         
