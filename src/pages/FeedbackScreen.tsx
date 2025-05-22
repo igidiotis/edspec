@@ -3,9 +3,10 @@ import { useApp } from '../context/AppContext';
 import Button from '../components/Button';
 import { Download } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { supabase } from '../supabaseClient';
 
 const FeedbackScreen: React.FC = () => {
-  const { setCurrentStep, storyContent } = useApp();
+  const { setCurrentStep, storyContent, checkInData, selectedCards, hasConsented } = useApp();
   const { t } = useTranslation();
   
   const [formData, setFormData] = useState({
@@ -17,6 +18,9 @@ const FeedbackScreen: React.FC = () => {
     storySurprises: '',
     realWorldApplications: ''
   });
+
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData(prev => ({
@@ -47,17 +51,38 @@ const FeedbackScreen: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+    setError(null);
     if (!formData.storyMessage) {
       alert(t('feedback.errorMessage'));
       return;
     }
-
     if (formData.wantsInterview && !formData.email) {
       alert(t('feedback.errorEmail'));
       return;
     }
-
+    setLoading(true);
+    // Prepare data for Supabase
+    const submission = {
+      has_consented: hasConsented,
+      occupation: checkInData.occupation,
+      other_occupation: checkInData.otherOccupation,
+      discipline: checkInData.discipline,
+      selected_themes: selectedCards,
+      story_content: storyContent,
+      wants_interview: formData.wantsInterview,
+      email: formData.email || null,
+      story_message: formData.storyMessage,
+      ai_views_impact: formData.aiViewsImpact || null,
+      future_vision_type: formData.futureVisionType || null,
+      story_surprises: formData.storySurprises || null,
+      real_world_applications: formData.realWorldApplications || null,
+    };
+    const { error: supabaseError } = await supabase.from('submissions').insert([submission]);
+    setLoading(false);
+    if (supabaseError) {
+      setError('There was an error submitting your response. Please try again.');
+      return;
+    }
     setCurrentStep('thanks');
   };
 
@@ -69,6 +94,11 @@ const FeedbackScreen: React.FC = () => {
       </p>
 
       <form onSubmit={handleSubmit} className="space-y-6">
+        {error && (
+          <div className="bg-red-100 border border-red-300 text-red-700 px-4 py-2 rounded mb-4">
+            {error}
+          </div>
+        )}
         <div className="space-y-4">
           <div className="flex items-start space-x-2 p-4 bg-gray-50 rounded-lg">
             <input
@@ -196,8 +226,9 @@ const FeedbackScreen: React.FC = () => {
             <Button 
               type="submit"
               className="flex-1 sm:flex-initial"
+              disabled={loading}
             >
-              {t('feedback.submit')}
+              {loading ? 'Submitting...' : t('feedback.submit')}
             </Button>
           </div>
         </div>
