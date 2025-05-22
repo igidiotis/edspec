@@ -3,10 +3,9 @@ import React, { createContext, useContext, useState } from 'react';
 export type Step = 'consent' | 'checkin' | 'cards' | 'writing' | 'feedback' | 'thanks';
 
 interface CheckInData {
-  mood: string;
-  workplace: string;
-  country: string;
-  selectedProblems: string[];
+  occupation: string;
+  otherOccupation: string;
+  discipline: string;
 }
 
 interface FeedbackData {
@@ -40,10 +39,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [currentStep, setCurrentStep] = useState<Step>('consent');
   const [hasConsented, setHasConsented] = useState(false);
   const [checkInData, setCheckInData] = useState<CheckInData>({
-    mood: '',
-    workplace: '',
-    country: '',
-    selectedProblems: [],
+    occupation: '',
+    otherOccupation: '',
+    discipline: ''
   });
   const [selectedCards, setSelectedCards] = useState<string[]>([]);
   const [storyContent, setStoryContent] = useState('');

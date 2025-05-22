@@ -2,34 +2,13 @@ import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import Button from '../components/Button';
 
-interface Problem {
-  id: string;
-  label: string;
-}
-
-const problems: Problem[] = [
-  { id: 'aesthetics', label: 'Aesthetics and Good Design' },
-  { id: 'education', label: 'Education' },
-  { id: 'energy', label: 'Energy' },
-  { id: 'freedom', label: 'Freedom and Independence' },
-  { id: 'community', label: 'Community and Family' },
-  { id: 'justice', label: 'Justice, Equality, and Equity' },
-  { id: 'health', label: 'Health' },
-  { id: 'industry', label: 'Industry and Economy' },
-  { id: 'mobility', label: 'Mobility' },
-  { id: 'safety', label: 'Safety and Security' },
-  { id: 'environment', label: 'Environment and Climate' },
-  { id: 'living', label: 'Living Space' }
-];
-
 const CheckInScreen: React.FC = () => {
   const { setCurrentStep, checkInData, setCheckInData } = useApp();
   
   const [formData, setFormData] = useState({
-    mood: checkInData.mood || '',
-    workplace: checkInData.workplace || '',
-    country: checkInData.country || '',
-    selectedProblems: checkInData.selectedProblems || []
+    occupation: checkInData.occupation || '',
+    otherOccupation: checkInData.otherOccupation || '',
+    discipline: checkInData.discipline || ''
   });
   
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>) => {
@@ -40,32 +19,16 @@ const CheckInScreen: React.FC = () => {
     });
   };
 
-  const handleProblemChange = (problemId: string) => {
-    setFormData(prev => {
-      const currentProblems = prev.selectedProblems;
-      if (currentProblems.includes(problemId)) {
-        return {
-          ...prev,
-          selectedProblems: currentProblems.filter(id => id !== problemId)
-        };
-      }
-      if (currentProblems.length < 3) {
-        return {
-          ...prev,
-          selectedProblems: [...currentProblems, problemId]
-        };
-      }
-      return prev;
-    });
-  };
-  
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setCheckInData(formData);
     setCurrentStep('cards');
   };
   
-  const isComplete = formData.mood && formData.workplace && formData.country && formData.selectedProblems.length > 0;
+  const isComplete = 
+    formData.occupation && 
+    (formData.occupation !== 'Other' || formData.otherOccupation) &&
+    formData.discipline;
   
   return (
     <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-sm p-6 animate-fade-in">
@@ -74,78 +37,56 @@ const CheckInScreen: React.FC = () => {
       
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label htmlFor="mood" className="block text-sm font-medium text-gray-700 mb-1">
-            How are you feeling today?
+          <label htmlFor="occupation" className="block text-sm font-medium text-gray-700 mb-1">
+            Occupation
           </label>
           <select
-            id="mood"
-            name="mood"
-            value={formData.mood}
+            id="occupation"
+            name="occupation"
+            value={formData.occupation}
             onChange={handleChange}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
             required
           >
-            <option value="" disabled>Select an option</option>
-            <option value="Excited">Excited</option>
-            <option value="Curious">Curious</option>
-            <option value="Neutral">Neutral</option>
-            <option value="Tired">Tired</option>
-            <option value="Anxious">Anxious</option>
+            <option value="" disabled>Select your occupation</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Student">Student</option>
+            <option value="Researcher">Researcher</option>
+            <option value="Other">Other</option>
           </select>
         </div>
 
-        <div>
-          <label htmlFor="workplace" className="block text-sm font-medium text-gray-700 mb-1">
-            What type of workplace do you work in?
-          </label>
-          <input
-            type="text"
-            id="workplace"
-            name="workplace"
-            value={formData.workplace}
-            onChange={handleChange}
-            className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-            placeholder="e.g., University, High School, Research Institute"
-            required
-          />
-        </div>
+        {formData.occupation === 'Other' && (
+          <div>
+            <label htmlFor="otherOccupation" className="block text-sm font-medium text-gray-700 mb-1">
+              Please specify your occupation
+            </label>
+            <input
+              type="text"
+              id="otherOccupation"
+              name="otherOccupation"
+              value={formData.otherOccupation}
+              onChange={handleChange}
+              className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              required
+            />
+          </div>
+        )}
 
         <div>
-          <label htmlFor="country" className="block text-sm font-medium text-gray-700 mb-1">
-            Which country do you work in?
+          <label htmlFor="discipline" className="block text-sm font-medium text-gray-700 mb-1">
+            Subject discipline
           </label>
           <input
             type="text"
-            id="country"
-            name="country"
-            value={formData.country}
+            id="discipline"
+            name="discipline"
+            value={formData.discipline}
             onChange={handleChange}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-            placeholder="e.g., United States, Germany, Japan"
+            placeholder="e.g. Education, engineering, mathematics"
             required
           />
-        </div>
-        
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
-            Which problems are most important to address today? (Select up to 3)
-          </label>
-          <div className="grid grid-cols-2 gap-3">
-            {problems.map(problem => (
-              <label
-                key={problem.id}
-                className="flex items-start space-x-2 p-2 rounded hover:bg-gray-50"
-              >
-                <input
-                  type="checkbox"
-                  checked={formData.selectedProblems.includes(problem.id)}
-                  onChange={() => handleProblemChange(problem.id)}
-                  className="mt-1 rounded border-gray-300 text-blue-500 focus:ring-blue-500"
-                />
-                <span className="text-sm text-gray-700">{problem.label}</span>
-              </label>
-            ))}
-          </div>
         </div>
         
         <div className="flex justify-between mt-8">

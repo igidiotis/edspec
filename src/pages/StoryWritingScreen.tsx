@@ -10,8 +10,7 @@ const StoryWritingScreen: React.FC = () => {
     setCurrentStep, 
     selectedCards, 
     storyContent, 
-    setStoryContent,
-    wildCardContent 
+    setStoryContent 
   } = useApp();
   
   const [wordCount, setWordCount] = useState(0);
@@ -19,7 +18,6 @@ const StoryWritingScreen: React.FC = () => {
   const [dismissedPrompts, setDismissedPrompts] = useState<string[]>([]);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   
-  // Calculate word count when story content changes
   useEffect(() => {
     const count = storyContent.trim() 
       ? storyContent.trim().split(/\s+/).length 
@@ -27,17 +25,12 @@ const StoryWritingScreen: React.FC = () => {
     setWordCount(count);
   }, [storyContent]);
   
-  // Show prompts based on word count
   useEffect(() => {
-    // Filter prompts that should be shown based on word count and haven't been dismissed
     const promptsToShow = writingPrompts
       .filter(prompt => {
-        // Check if the prompt is relevant for selected cards
         const isRelevantForCards = !prompt.cardIds || 
           prompt.cardIds.some(cardId => selectedCards.includes(cardId));
           
-        // Show if it meets the word count trigger, is relevant for selected cards,
-        // isn't already active, and hasn't been dismissed
         return wordCount >= prompt.triggerWordCount && 
                isRelevantForCards &&
                !activePrompts.includes(prompt.id) &&
@@ -55,7 +48,7 @@ const StoryWritingScreen: React.FC = () => {
     setDismissedPrompts(prev => [...prev, promptId]);
   };
   
-  const getSelectedCardTitles = () => {
+  const getSelectedThemes = () => {
     return selectedCards
       .map(cardId => {
         const card = scenarioCards.find(c => c.id === cardId);
@@ -66,12 +59,10 @@ const StoryWritingScreen: React.FC = () => {
   };
   
   const handleSubmit = () => {
-    // Validate minimum content
     if (wordCount < 50) {
       alert('Please write at least 50 words for your story.');
       return;
     }
-    
     setCurrentStep('feedback');
   };
   
@@ -79,8 +70,8 @@ const StoryWritingScreen: React.FC = () => {
     <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-sm p-6 animate-fadeIn">
       <h2 className="text-xl font-semibold mb-2">Write Your Story</h2>
       <p className="text-gray-600 mb-6">
-        Based on {selectedCards.includes('wildcard') ? 'your custom scenario' : getSelectedCardTitles()}, 
-        write a speculative story about the future of education.
+        Inspired by {selectedCards.includes('wildcard') ? 'your own vision' : getSelectedThemes()}, 
+        write a speculative story about the future of AI in education.
       </p>
       
       <div className="flex flex-col-reverse lg:flex-row gap-6">
@@ -115,14 +106,7 @@ const StoryWritingScreen: React.FC = () => {
           </div>
         </div>
         
-        <div className="lg:w-72 space-y-2">
-          {selectedCards.includes('wildcard') && (
-            <div className="bg-gray-50 border border-gray-200 rounded-md p-3 mb-3">
-              <h3 className="font-medium text-sm mb-1">Your Scenario:</h3>
-              <p className="text-sm text-gray-600">{wildCardContent}</p>
-            </div>
-          )}
-          
+        <div className="lg:w-72">
           <div className="sticky top-4 space-y-2">
             {activePrompts.map((promptId, index) => {
               const prompt = writingPrompts.find(p => p.id === promptId);

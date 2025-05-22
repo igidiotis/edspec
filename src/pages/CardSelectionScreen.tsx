@@ -16,38 +16,34 @@ const CardSelectionScreen: React.FC = () => {
   }, [selectedCards]);
   
   const handleCardSelection = (cardId: string) => {
-    // If card is already selected, remove it
     if (selectedCards.includes(cardId)) {
       setSelectedCards(selectedCards.filter(id => id !== cardId));
       return;
     }
-    
-    // Enforce maximum of 2 cards
-    if (selectedCards.length >= 2) {
-      setError('Please select a maximum of 2 cards');
-      return;
-    }
-    
-    // Add the card to selected cards
     setSelectedCards([...selectedCards, cardId]);
   };
 
   const handleContinue = () => {
-    // Validate selection
     if (selectedCards.length === 0) {
-      setError('Please select at least one card');
+      setError('Please select at least one theme');
       return;
     }
-    
-    // Continue to next step
     setCurrentStep('writing');
   };
+
+  // Separate "Write freely" card from theme cards
+  const writeFreely = scenarioCards.find(card => card.id === 'wildcard');
+  const themeCards = scenarioCards.filter(card => card.id !== 'wildcard');
+  
+  // Split theme cards into two groups of 4
+  const firstRowCards = themeCards.slice(0, 4);
+  const secondRowCards = themeCards.slice(4, 8);
   
   return (
     <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-sm p-6 animate-fadeIn">
-      <h2 className="text-xl font-semibold mb-2">Select Scenario Cards</h2>
+      <h2 className="text-xl font-semibold mb-2">Select Themes</h2>
       <p className="text-gray-600 mb-6">
-        Select one or two cards that will inspire your story about the future of education.
+        Select one or more themes that you are interested in and will inspire your story about the future of education.
       </p>
       
       {error && (
@@ -56,15 +52,39 @@ const CardSelectionScreen: React.FC = () => {
         </div>
       )}
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
-        {scenarioCards.map(card => (
+      {writeFreely && (
+        <div className="max-w-md mx-auto mb-8">
           <ScenarioCard
-            key={card.id}
-            card={card}
-            isSelected={selectedCards.includes(card.id)}
-            onClick={() => handleCardSelection(card.id)}
+            key={writeFreely.id}
+            card={writeFreely}
+            isSelected={selectedCards.includes(writeFreely.id)}
+            onClick={() => handleCardSelection(writeFreely.id)}
           />
-        ))}
+        </div>
+      )}
+      
+      <div className="space-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {firstRowCards.map(card => (
+            <ScenarioCard
+              key={card.id}
+              card={card}
+              isSelected={selectedCards.includes(card.id)}
+              onClick={() => handleCardSelection(card.id)}
+            />
+          ))}
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {secondRowCards.map(card => (
+            <ScenarioCard
+              key={card.id}
+              card={card}
+              isSelected={selectedCards.includes(card.id)}
+              onClick={() => handleCardSelection(card.id)}
+            />
+          ))}
+        </div>
       </div>
       
       <div className="flex justify-between mt-8">
