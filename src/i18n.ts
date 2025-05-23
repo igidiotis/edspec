@@ -130,30 +130,40 @@ const resources = {
       "back": "Tillbaka",
       "and": "och",
       "consent.title": "Samtyckesblankett - Forskningsprojekt",
-      "consent.intro": "<span style=\"color:#1d4ed8\"><strong>Att skriva spekulativa berättelser hjälper oss att bygga alternativa, (o)önskade utbildningsrum eller scenarier, vilket ger insikter som kan informera nuvarande beslut och perspektiv.</strong></span>",
-      "consent.fullText": `<p>Syftet med detta forskningsprojekt är att undersöka potentialen i att använda spekulativ berättarskrivning för att utforska den långsiktiga påverkan av artificiell intelligens (AI) på framtida utbildningskontexter. Du inbjuds att delta genom att bidra med din egen spekulativa berättelse. Ditt deltagande kommer att hjälpa oss att bättre förstå olika visioner av framtida lärmiljöer som formas av AI.</p>
+      "consent.intro": "<span style=\"color:#1d4ed8\"><strong>Att skriva spekulativa berättelser hjälper oss att föreställa oss alternativa – önskade eller oönskade – utbildningsmiljöer eller scenarier. Det kan ge insikter som bidrar till att forma våra nuvarande beslut och perspektiv.</strong></span>",
+      "consent.fullText": `<p>Syftet med detta forskningsprojekt är att utforska möjligheterna med spekulativt berättande som metod för att undersöka den långsiktiga påverkan av artificiell intelligens (AI) på framtidens utbildningskontexter. Du inbjuds att delta genom att bidra med en egen spekulativ berättelse. Ditt deltagande kommer att bidra till en djupare förståelse för olika visioner av framtida lärmiljöer präglade av AI.</p>
 
-<h3 style=\"color:#1d4ed8\">Projektspecifikationer</h3>
-<p>Som en del av detta projekt kommer du att använda ett digitalt scenarioskrivarverktyg. När du samtyckt till att delta kommer du att uppmanas att svara på två korta frågor om din yrkesroll (lärare, student, forskare, annat) och ditt ämnesområde. Därefter kommer du att presenteras för 8 teman som har identifierats som relevanta för framtiden för AI inom utbildning i tidigare forskning. Du kan välja några av temana baserat på vad som intresserar dig eller alternativet att \"skriva fritt\". Valet av teman är endast vägledande för dina intressen och inte på annat sätt bindande för scenarioskrivandet. Efter det kommer du att uppmanas att börja skriva ditt scenario. Verktyget har en miniminivå på 150 ord innan det låter dig skicka in din berättelse. Du är fri att överskrida denna gräns om du vill. Under skrivprocessen kommer hjälpsamma frågor eller uppmaningar att dyka upp för att inspirera dig - du är fri att följa dem eller förkasta dem. Efter att ha slutfört din berättelse ombeds du att ange din e-postadress om du samtycker till att delta i ytterligare forskning angående framtiden för AI inom utbildning (frivilligt) och att svara på några frågor som kommer att hjälpa oss att ytterligare analysera din berättelse.</p>
-<p>Slutligen har du möjlighet att ladda ner din berättelse till din enhet innan du skickar in den. Först efter att ha klickat på den slutliga \"skicka\"-knappen kommer din berättelse och dina data att nå oss - din information sparas inte på annat sätt i vår forskningsdatabas under processen att navigera i verktyget.</p>
+<h2 style=\"color:#1d4ed8\">Projektspecifikationer</h2>
+<p>Som deltagare i detta projekt kommer du att använda ett digitalt verktyg för scenarioskrivande. När du har samtyckt till att delta, ombeds du besvara två korta frågor om din yrkesroll (lärare, student, forskare eller annat) samt ditt ämnesområde.</p>
+<p>Därefter kommer du att få ta del av åtta teman som tidigare forskning har identifierat som relevanta för AI:s framtid inom utbildning. Du kan välja de teman som intresserar dig, eller alternativt välja att "skriva fritt". Temana fungerar enbart som inspiration och är inte bindande för själva scenarioskrivandet.</p>
+<p>När du gjort ditt val uppmanas du att börja skriva ditt scenario. Verktyget kräver minst 150 ord innan du kan skicka in din berättelse, men du är naturligtvis fri att skriva längre. Under skrivprocessen kommer olika uppmaningar och reflekterande frågor att dyka upp för att inspirera dig – du väljer själv om du vill använda dem eller inte.</p>
+<p>När din berättelse är färdig har du möjlighet att (frivilligt) lämna din e-postadress om du vill delta i framtida forskning om AI i utbildning. Du ombeds också svara på några avslutande frågor som hjälper oss att analysera din berättelse ytterligare.</p>
+<p>Slutligen kan du ladda ner din berättelse till din egen enhet. Först när du klickar på den slutliga ”skicka”-knappen skickas din berättelse och dina uppgifter till oss. Ingen information sparas under tiden du använder verktyget, innan du aktivt väljer att skicka in den.</p>
 
-<h3 style=\"color:#1d4ed8\">Informationsinsamling</h3>
+<h2 style=\"color:#1d4ed8\">Informationsinsamling</h2>
 <ul><li><strong>Skriven berättelse:</strong> Berättelsen du skapar lagras separat och kommer inte att kopplas till någon identifierande personlig information.</li><li><strong>E-postadress (frivillig):</strong> Endast om du väljer att tillhandahålla den.</li><li><strong>Yrkesroll, ämnesområde:</strong> Allmän demografisk information som hjälper oss att bedöma publiken som använder verktyget.</li></ul>
 <p>De inlämnade berättelserna och din återkoppling kommer att analyseras som en del av forskningsprojektet. Delar av dessa berättelser kan också citeras eller diskuteras i forskningspublikationer och presentationer, eller användas i efterföljande fokusgrupper eller workshopdiskussioner. Dock kommer ingen identifierande information att inkluderas i sådana diskussioner.</p>
 
-<h3 style=\"color:#1d4ed8\">Frivilligt deltagande och dataskydd</h3>
-<p>Ditt deltagande i denna studie är helt frivilligt. Du kan avbryta ditt deltagande när som helst utan att ange någon anledning. Endast auktoriserade forskningsteammedlemmar kommer att ha tillgång till data som lämnats in genom detta projekt. Inga data kommer att delas utanför det omedelbara forskningsteamet (se nedan).<br/>Vi behandlar dina personuppgifter på grundval av ditt samtycke, i enlighet med artikel 6(1)(a) i <a href=\"https://gdpr-info.eu/art-6-gdpr/\" style=\"color:#1d4ed8\" target=\"_blank\">GDPR</a>, och (om tillämpligt) för arkiveringsändamål i allmänhetens intresse, vetenskapliga eller historiska forskningsändamål eller statistiska ändamål enligt artikel 9(2)(j).</p>
-<p><a href=\"https://www.kth.se/\" style=\"color:#1d4ed8\" target=\"_blank\">Kungliga Tekniska högskolan (KTH)</a> i Stockholm, Sverige, är den enhet som ansvarar för dina personuppgifter. När projektet avslutas kommer de data som samlats in och genererats inom projektet att säkert lagras för arkiveringsändamål i minst 5 år.</p>
+<h2 style=\"color:#1d4ed8\">Frivilligt deltagande och dataskydd</h2>
+<p>Ditt deltagande i denna studie är helt frivilligt. Du kan när som helst avbryta ditt deltagande utan att ange någon anledning. Endast auktoriserade medlemmar av forskningsteamet kommer att ha tillgång till de uppgifter som lämnas in inom ramen för detta projekt. Inga data kommer att delas utanför det omedelbara forskningsteamet (se nedan).</p>
+<p>Vi behandlar dina personuppgifter med stöd av ditt samtycke, i enlighet med <a href="https://gdpr-info.eu/art-6-gdpr/" style="color:#1d4ed8" target="_blank">artikel 6(1)(a) i GDPR</a>, och – om tillämpligt – för arkiveringsändamål i allmänhetens intresse, för vetenskapliga eller historiska forskningsändamål eller för statistiska ändamål, i enlighet med <a href="https://gdpr-info.eu/art-9-gdpr/#2-j" style="color:#1d4ed8" target="_blank">artikel 9(2)(j)</a>.</p>
+<p><a href="https://www.kth.se/" style="color:#1d4ed8" target="_blank">Kungliga Tekniska högskolan (KTH)</a> i Stockholm, Sverige, är den personuppgiftsansvariga organisationen. När projektet avslutas kommer insamlade och genererade data att lagras säkert i minst fem år för arkiveringsändamål.</p>
 
-<h3 style=\"color:#1d4ed8\">Dina rättigheter gällande dina data</h3>
-<p>I enlighet med EU:s dataskyddsreglering (<a href=\"https://gdpr-info.eu/\" style=\"color:#1d4ed8\" target=\"_blank\">GDPR</a>) och relevant nationell lagstiftning har du rätt att:</p>
-<ul><li>Återkalla ditt samtycke utan att det påverkar lagligheten av databehandling som redan utförts före återkallelsen.</li><li>Begära tillgång till dina personuppgifter.</li><li>Få dina personuppgifter rättade.</li><li>Få dina personuppgifter raderade.</li><li>Få behandlingen av dina personuppgifter begränsad.</li></ul>
-<p>Observera att dessa rättigheter kan vara begränsade under vissa omständigheter, såsom sekretesskrav eller arkiveringsregler.</p>
+<h2 style=\"color:#1d4ed8\">Dina rättigheter gällande dina data</h2>
+<p>I enlighet med EU:s dataskyddsförordning (<a href="https://gdpr-info.eu/" style="color:#1d4ed8" target="_blank">GDPR</a>) och relevant nationell lagstiftning har du rätt att:</p>
+<ul>
+  <li>Återkalla ditt samtycke utan att det påverkar lagligheten av den behandling som redan utförts.</li>
+  <li>Begära tillgång till dina personuppgifter.</li>
+  <li>Få dina personuppgifter rättade.</li>
+  <li>Få dina personuppgifter raderade.</li>
+  <li>Begränsa behandlingen av dina personuppgifter.</li>
+</ul>
+<p>Observera att vissa rättigheter kan vara begränsade i särskilda fall, till exempel på grund av sekretesskrav eller lagstadgade arkiveringsregler.</p>
 
-<h3 style=\"color:#1d4ed8\">Dataskydd och klagomål</h3>
-<p>Om du har frågor om hur dina data hanteras eller vill utöva någon av dina dataskyddsrättigheter kan du kontakta:<br/><strong>KTH Dataskyddsombud (DPO):</strong> <a href=\"mailto:dataskyddsombud@kth.se\" style=\"color:#1d4ed8\">dataskyddsombud@kth.se</a><br/>Du har också rätt att lämna in ett klagomål till <a href=\"https://www.imy.se/\" style=\"color:#1d4ed8\" target=\"_blank\">Integritetsskyddsmyndigheten (imy.se)</a>.</p>
+<h2 style=\"color:#1d4ed8\">Dataskydd och klagomål</h2>
+<p>Om du har några frågor om hur dina data hanteras eller vill utöva någon av dina dataskyddsrättigheter kan du kontakta:<br/><strong>KTH Dataskyddsombud (DPO):</strong> <a href=\"mailto:dataskyddsombud@kth.se\" style=\"color:#1d4ed8\">dataskyddsombud@kth.se</a><br/>Du har också rätt att lämna in ett klagomål till <a href=\"https://www.imy.se/\" style=\"color:#1d4ed8\" target=\"_blank\">Integritetsskyddsmyndigheten (imy.se)</a>.</p>
 
-<h3 style=\"color:#1d4ed8\">Projektansvar och kontaktinformation</h3>
+<h2 style=\"color:#1d4ed8\">Projektansvar och kontaktinformation</h2>
 <p><strong>Projektansvarig (Forskare):</strong> <a href=\"mailto:gidiotis@kth.se\" style=\"color:#1d4ed8\">gidiotis@kth.se</a><br/><strong>Huvudhandledare för forskning:</strong> <a href=\"mailto:stefanhr@kth.se\" style=\"color:#1d4ed8\">stefanhr@kth.se</a><br/><strong>Postadress:</strong> BRINELLVÄGEN 68, 10044 STOCKHOLM, SWEDEN</p>
 <p><em>Observera: Om du så önskar kan du begära en sammanfattning av studiens resultat när forskningen är slutförd genom att kontakta projektansvariga.</em></p>`,
       "consent.checkbox": "Jag har läst och samtycker till att delta i denna forskningsstudie. Jag förstår hur mina data kommer att användas.",
