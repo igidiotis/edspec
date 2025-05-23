@@ -8,7 +8,7 @@ const scenarioCards: ScenarioCard[] = [
   {
     id: 'wildcard',
     color: 'bg-gradient-to-br from-gray-50 to-gray-100 border-gray-200',
-    image: 'https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=300',
+    image: 'https://images.pexels.com/photos/256514/pexels-photo-256514.jpeg.jpeg?auto=compress&cs=tinysrgb&w=300',
   },
   {
     id: 'assessment',
