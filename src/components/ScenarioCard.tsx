@@ -35,12 +35,12 @@ const ScenarioCard: React.FC<ScenarioCardProps> = ({
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="p-4 flex flex-col h-full justify-between text-left">
+      <div className="p-4 flex flex-col justify-between text-left min-h-[180px]">
         <div>
           <h3 className="font-medium text-base mb-2">{t(`cards.${card.id}.title`)}</h3>
           <p className="text-sm text-gray-700">{t(`cards.${card.id}.description`)}</p>
         </div>
-        <div className="mt-3 flex justify-end items-end grow">
+        <div className="mt-3 flex justify-end items-end">
           {isSelected ? (
             <span className="inline-flex items-center text-sm font-medium text-blue-500">
               {t('cards.selected')}
