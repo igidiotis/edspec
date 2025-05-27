@@ -83,7 +83,9 @@ const MainContent: React.FC = () => {
       <footer className="mt-12 text-center text-sm text-gray-500">
         <p>
           <Trans i18nKey="footer">
-            <a href="https://www.kth.se/profile/gidiotis" target="_blank">Iosif Gidiotis</a>
+            components={[
+      <a href="https://www.kth.se/profile/gidiotis" target="_blank" rel="noopener noreferrer" />
+    ]}
           </Trans>
         </p>
       </footer>
