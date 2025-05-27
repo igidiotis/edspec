@@ -6,7 +6,7 @@ const resources = {
   en: {
     translation: {
       "appTitle": "Future of AI in Education",
-      "footer": "2025 Created by <1>Iosif Gidiotis</1> - <2>Report an issue</2>",
+      "footer": "2025 Created by <1>Iosif Gidiotis</1> <2>Report an issue</2>",
       "swedishVersion": "Access the Swedish version here",
       "continue": "Continue",
       "back": "Back",
@@ -137,7 +137,7 @@ const resources = {
   sv: {
     translation: {
       "appTitle": "AI:s framtid inom utbildning",
-      "footer": "2025 Skapad av <1>Iosif Gidiotis</1> - <2>Rapportera ett problem</2>",
+      "footer": "2025 Skapad av <1>Iosif Gidiotis</1> <2>Rapportera ett problem</2>",
       "swedishVersion": "Gå till den svenska versionen här",
       "continue": "Fortsätt",
       "back": "Tillbaka",
