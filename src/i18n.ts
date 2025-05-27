@@ -131,7 +131,7 @@ const resources = {
       "cards.humanrelationships.description": "Maintaining authentic interpersonal connections in increasingly digital learning spaces.",
       "cards.sustainability.title": "Sustainability",
       "cards.sustainability.description": "Long-term viability and environmental considerations of AI implementation in education.",
-      "consent.scrollToConsent": "Scrolla ner för att samtycka till att använda verktyget och delta i forskningsprojektet."
+      "consent.scrollToConsent": "Scroll to the bottom to consent to using the tool and participate in the research project."
     }
   },
   sv: {
@@ -272,7 +272,7 @@ const resources = {
       "cards.humanrelationships.description": "Bevarande av äkta mellanmänskliga kontakter i allt mer digitaliserade lärmiljöer.",
       "cards.sustainability.title": "Hållbarhet",
       "cards.sustainability.description": "Långsiktig genomförbarhet och miljöhänsyn vid implementering av AI inom utbildning.",
-      "consent.scrollToConsent": "Scrolla ner för att samtycka till att använda verktyget."
+      "consent.scrollToConsent": "Scrolla ner för att samtycka till att använda verktyget och delta i forskningsprojektet."
     }
   }
 };
