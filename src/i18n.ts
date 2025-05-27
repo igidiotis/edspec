@@ -132,7 +132,9 @@ const resources = {
       "cards.sustainability.title": "Sustainability",
       "cards.sustainability.description": "Long-term viability and environmental considerations of AI implementation in education.",
       "consent.scrollToConsent": "Scroll to the bottom to consent to using the tool and participate in the research project.",
-      "helpButton.label": "Questions or problems?"
+      "helpButton.label": "Questions or problems?",
+      "helpButton.learnMore": "Learn more",
+      "helpButton.questions": "Questions or problems?"
     }
   },
   sv: {
@@ -274,7 +276,9 @@ const resources = {
       "cards.sustainability.title": "Hållbarhet",
       "cards.sustainability.description": "Långsiktig genomförbarhet och miljöhänsyn vid implementering av AI inom utbildning.",
       "consent.scrollToConsent": "Scrolla ner för att samtycka till att använda verktyget och delta i forskningsprojektet.",
-      "helpButton.label": "Frågor eller problem?"
+      "helpButton.label": "Frågor eller problem?",
+      "helpButton.learnMore": "Läs mer",
+      "helpButton.questions": "Frågor eller problem?"
     }
   }
 };

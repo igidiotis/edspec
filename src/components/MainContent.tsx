@@ -97,22 +97,28 @@ const MainContent: React.FC = () => {
       >
         {showDualButtons ? (
           <div className="flex flex-col items-end gap-3 animate-fadeIn">
-            <a
-              href="https://www.kth.se/profile/gidiotis"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white text-3xl shadow-lg transition-transform hover:scale-110 focus:outline-none mb-1"
-              aria-label="Visit my website"
-            >
-              <span role="img" aria-label="website">🌐</span>
-            </a>
-            <a
-              href="mailto:gidiotis@kth.se"
-              className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white text-3xl shadow-lg transition-transform hover:scale-110 focus:outline-none"
-              aria-label={t('helpButton.label')}
-            >
-              <span role="img" aria-label="help">❓</span>
-            </a>
+            <div className="flex items-center gap-2">
+              <a
+                href="https://www.kth.se/profile/gidiotis"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white text-3xl shadow-lg transition-transform hover:scale-110 focus:outline-none mb-1"
+                aria-label={t('helpButton.learnMore')}
+              >
+                <span role="img" aria-label="website">🌐</span>
+              </a>
+              <span className="ml-2 text-base text-gray-800 bg-white px-3 py-1 rounded-lg shadow border border-gray-200 animate-fadeIn whitespace-nowrap">{t('helpButton.learnMore')}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <a
+                href="mailto:gidiotis@kth.se"
+                className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white text-3xl shadow-lg transition-transform hover:scale-110 focus:outline-none"
+                aria-label={t('helpButton.questions')}
+              >
+                <span role="img" aria-label="help">❓</span>
+              </a>
+              <span className="ml-2 text-base text-gray-800 bg-white px-3 py-1 rounded-lg shadow border border-gray-200 animate-fadeIn whitespace-nowrap">{t('helpButton.questions')}</span>
+            </div>
           </div>
         ) : (
           <button
