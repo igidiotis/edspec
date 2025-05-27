@@ -16,7 +16,7 @@ const resources = {
       "consent.fullText": `<p>The purpose of this research project is to examine the potential of using speculative storywriting to explore the long-term impact of artificial intelligence (AI) on future education contexts. You are invited to participate by contributing your own speculative story. Your participation will help us better understand various visions of future learning environments shaped by AI.</p>
 
 <h3 style=\"color:#1d4ed8\">Project Specifications</h3>
-<p>As part of this project, you will use a digital scenario writing tool. Upon agreeing to participate, you will be prompted to answer two short questions about your occupation (teacher, student, researcher, other) and your subject field. Then, you will be presented with 8 themes that have been identified as relevant for the future of AI in education in previous research. You can choose some of the themes based on what interests you or the option to 'write freely'. The choice of themes is only indicative of your interests and not otherwise binding for the scenario writing. After that, you will be prompted to start writing your scenario. The tool has a minimum amount of 150 words before it lets you submit your story. You are free to exceed that limit if you want. During the process of writing, helpful questions or prompts will appear to inspire you - you are free to follow them or reject them. After completing your story, you are asked to submit your email address if you agree to participate in further research regarding the future of AI in education (voluntary) and to answer some questions that will help us further analyse your story.</p>
+<p>As part of this project, you will use a digital scenario writing tool. Upon agreeing to participate, you will be prompted to answer two short questions about your occupation (teacher, student, researcher, other) and your subject field. Then, you will be presented with 8 themes that have been identified as relevant for the future of AI in education in previous research. You can choose some of the themes based on what interests you or the option to 'write freely'. The choice of themes is only indicative of your interests and not otherwise binding for the scenario writing. After that, you will be prompted to start writing your scenario. The tool has a minimum amount of 80 words (recommended minimum: 150 words) before it lets you submit your story. You are free to exceed that limit if you want. During the process of writing, helpful questions or prompts will appear to inspire you - you are free to follow them or reject them. After completing your story, you are asked to submit your email address if you agree to participate in further research regarding the future of AI in education (voluntary) and to answer some questions that will help us further analyse your story.</p>
 <p>In the end, you have the option to download your story on your device before you submit. Only after clicking the final 'submit' button will your story and your data reach us - your information is not otherwise saved on our research database during the process of navigating the tool.</p>
 
 <h3 style=\"color:#1d4ed8\">Information Collection</h3>
@@ -51,7 +51,7 @@ const resources = {
       "checkin.discipline": "Subject discipline",
       "checkin.disciplinePlaceholder": "e.g. Education, engineering, mathematics",
       "cards.title": "Select Themes",
-      "cards.intro": "What are the most important questions for you when it comes to the future of education? Select one or more themes that you are interested in and that will inspire your story about the future of education. Alternatively, you can just click 'Write Freely' to write your story without any overarchingtheme.",
+      "cards.intro": "What are the most important questions for you when it comes to the future of education? Select one or more themes that you are interested in and that will inspire your story about the future of education. Alternatively, you can just click 'Write Freely' to write your story without any overarching theme.",
       "cards.error": "Please select at least one theme",
       "writing.title": "Write Your Story",
       "writing.intro": "Inspired by {{inspiration}}, write a speculative story about the future of AI in education.",
@@ -65,7 +65,7 @@ const resources = {
       "feedback.intro": "Help us understand your perspective on the future of AI in education.",
       "feedback.interview": "I want to be further contacted to participate in short interviews or focus group discussions related to the topic of AI and education",
       "feedback.email": "Email Address",
-      "feedback.emailNote": "Providing your email address will only be used for communications related to this research and will not undermine the anonymity of the data collected through the tool.",
+      "feedback.emailNote": "Optional - Providing your email address will only be used for communications related to this research and will not undermine the anonymity of the data collected through the tool.",
       "feedback.storyMessage": "In one sentence: What message or insight do you think your story sends about the future of education? *",
       "feedback.aiViewsImpact": "How did writing a fictional scenario shape or shift your views about AI in education?",
       "feedback.futureVisionType": "Did your story reflect a utopian, dystopian, or hybrid vision of the future? Why do you think that is?",
@@ -149,7 +149,7 @@ const resources = {
 <h2 style=\"color:#1d4ed8\">Projektspecifikationer</h2>
 <p>Som deltagare i detta projekt kommer du att använda ett digitalt verktyg för scenarioskrivande. När du har samtyckt till att delta, ombeds du besvara två korta frågor om din yrkesroll (lärare, student, forskare eller annat) samt ditt ämnesområde.</p>
 <p>Därefter kommer du att få ta del av åtta teman som tidigare forskning har identifierat som relevanta för AI:s framtid inom utbildning. Du kan välja de teman som intresserar dig, eller alternativt välja att "skriva fritt". Temana fungerar enbart som inspiration och är inte bindande för själva scenarioskrivandet.</p>
-<p>När du gjort ditt val uppmanas du att börja skriva ditt scenario. Verktyget kräver minst 150 ord innan du kan skicka in din berättelse, men du är naturligtvis fri att skriva längre. Under skrivprocessen kommer olika uppmaningar och reflekterande frågor att dyka upp för att inspirera dig – du väljer själv om du vill använda dem eller inte.</p>
+<p>När du gjort ditt val uppmanas du att börja skriva ditt scenario. Verktyget kräver minst 80 ord (rekommenderat minimum: 150 ord) innan du kan skicka in din berättelse, men du är naturligtvis fri att skriva längre. Under skrivprocessen kommer olika uppmaningar och reflekterande frågor att dyka upp för att inspirera dig – du väljer själv om du vill använda dem eller inte.</p>
 <p>När din berättelse är färdig har du möjlighet att (frivilligt) lämna din e-postadress om du vill delta i framtida forskning om AI i utbildning. Du ombeds också svara på några avslutande frågor som hjälper oss att analysera din berättelse ytterligare.</p>
 <p>Slutligen kan du ladda ner din berättelse till din egen enhet. Först när du klickar på den slutliga "skicka"-knappen skickas din berättelse och dina uppgifter till oss. Ingen information sparas under tiden du använder verktyget, innan du aktivt väljer att skicka in den.</p>
 
@@ -206,7 +206,7 @@ const resources = {
       "feedback.intro": "Hjälp oss att förstå din syn på AI:s framtid inom utbildning.",
       "feedback.interview": "Jag vill gärna bli kontaktad för att delta i korta intervjuer eller fokusgrupper om AI och utbildning.",
       "feedback.email": "E-postadress",
-      "feedback.emailNote": "Din e-postadress används enbart för kommunikation som rör denna forskning och påverkar inte anonymiteten i de data som samlas in via verktyget.",
+      "feedback.emailNote": "Frivilligt - Din e-postadress används enbart för kommunikation som rör denna forskning och påverkar inte anonymiteten i de data som samlas in via verktyget.",
       "feedback.storyMessage": "Med en mening: Vilket budskap eller vilken insikt tycker du att din berättelse förmedlar om utbildningens framtid? *",
       "feedback.aiViewsImpact": "Hur upplevde du att skriva ett fiktivt scenario om AI i utbildning?",
       "feedback.futureVisionType": "Var din berättelse utopisk, dystopisk eller en blandning – och varför tror du att det blev så?",
