@@ -83,7 +83,6 @@ const MainContent: React.FC = () => {
         <p>
           <Trans i18nKey="footer">
             <a href="https://www.kth.se/profile/gidiotis" target="_blank">Iosif Gidiotis</a>
-            <a href="mailto:gidiotis@kth.se" target="_blank">Report an issue</a>
           </Trans>
         </p>
       </footer>
