@@ -57,7 +57,7 @@ const StoryWritingScreen: React.FC = () => {
   };
   
   const handleSubmit = () => {
-    if (wordCount < 50) {
+    if (wordCount < 80) {
       alert(t('writing.error'));
       return;
     }
@@ -98,7 +98,7 @@ const StoryWritingScreen: React.FC = () => {
             </Button>
             <Button 
               onClick={handleSubmit}
-              disabled={wordCount < 50}
+              disabled={wordCount < 80}
             >
               {t('writing.submit')}
             </Button>
