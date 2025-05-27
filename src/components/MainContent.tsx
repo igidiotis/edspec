@@ -15,7 +15,7 @@ const MainContent: React.FC = () => {
   const { currentStep } = useApp();
   const { t, i18n } = useTranslation();
   const [showLangModal, setShowLangModal] = useState(false);
-  const [showHelpTooltip, setShowHelpTooltip] = useState(false);
+  const [showDualButtons, setShowDualButtons] = useState(false);
   
   useEffect(() => {
     // Show modal if no language is set in localStorage
@@ -89,24 +89,41 @@ const MainContent: React.FC = () => {
           </Trans>
         </p>
       </footer>
-      {/* Floating Help Button */}
+      {/* Floating Dual Help Button */}
       <div
         className="fixed bottom-4 right-4 z-50 flex flex-col items-end"
-        onMouseEnter={() => setShowHelpTooltip(true)}
-        onMouseLeave={() => setShowHelpTooltip(false)}
+        onMouseEnter={() => setShowDualButtons(true)}
+        onMouseLeave={() => setShowDualButtons(false)}
       >
-        {showHelpTooltip && (
-          <div className="mb-2 px-4 py-2 rounded-lg shadow-lg bg-white text-gray-800 text-base border border-gray-200 animate-fadeIn">
-            {t('helpButton.label')}
+        {showDualButtons ? (
+          <div className="flex flex-col items-end gap-3 animate-fadeIn">
+            <a
+              href="https://www.kth.se/profile/gidiotis"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white text-3xl shadow-lg transition-transform hover:scale-110 focus:outline-none mb-1"
+              aria-label="Visit my website"
+            >
+              <span role="img" aria-label="website">🌐</span>
+            </a>
+            <a
+              href="mailto:gidiotis@kth.se"
+              className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white text-3xl shadow-lg transition-transform hover:scale-110 focus:outline-none"
+              aria-label={t('helpButton.label')}
+            >
+              <span role="img" aria-label="help">❓</span>
+            </a>
           </div>
+        ) : (
+          <button
+            className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white text-3xl shadow-lg transition-transform hover:scale-110 focus:outline-none"
+            aria-label="More info"
+            tabIndex={0}
+            type="button"
+          >
+            <span role="img" aria-label="info">ℹ️</span>
+          </button>
         )}
-        <a
-          href="mailto:gidiotis@kth.se"
-          className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white text-3xl shadow-lg transition-transform hover:scale-110 focus:outline-none"
-          aria-label={t('helpButton.label')}
-        >
-          <span role="img" aria-label="help">❓</span>
-        </a>
       </div>
     </div>
   );
