@@ -8,7 +8,7 @@ const writingPrompts: WritingPrompt[] = [
   { id: 'start', triggerWordCount: 0 },
   { id: 'character', triggerWordCount: 15 },
   { id: 'challenge', triggerWordCount: 40 },
-  { id: 'solution', triggerWordCount: 90 },
+  { id: 'solution', triggerWordCount: 55 },
   { id: 'tech_detail', triggerWordCount: 60, cardIds: ['technology', 'personalization'] },
   { id: 'equity_detail', triggerWordCount: 60, cardIds: ['equity', 'global'] },
   { id: 'environment_detail', triggerWordCount: 60, cardIds: ['environment', 'community'] },

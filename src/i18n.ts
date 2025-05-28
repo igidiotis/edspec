@@ -258,7 +258,7 @@ const resources = {
       "cards.community.title": "Lärande i samhället",
       "cards.community.description": "Föreställ dig hur AI kan integrera utbildning med lokala samhällen och möjligheter.",
       "prompt.start.title": "Kom igång",
-      "prompt.start.message": "Fundera på att börja med en specifik tidsperiod eller miljö för ditt framtidsscenario.",
+      "prompt.start.message": "Om du vill kan du börja att beskriva en tidsperiod eller miljö för ditt framtidsscenario.",
       "prompt.character.title": "Lägg till karaktärer",
       "prompt.character.message": "Om du vill kan du beskriva en student, lärare eller annan person som upplever denna framtid.",
       "prompt.challenge.title": "Introducera en utmaning",
