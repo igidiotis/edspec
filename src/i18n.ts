@@ -13,31 +13,41 @@ const resources = {
       "and": "and",
       "consent.title": "Research Participation Consent",
       "consent.intro": "<span style=\"color:#1d4ed8\"><strong>Writing speculative stories helps us build alternative, (un)wanted education spaces or scenarios, offering insights that can inform present decisions and outlooks.</strong></span>",
-      "consent.fullText": `<p>The purpose of this research project is to examine the potential of using speculative storywriting to explore the long-term impact of artificial intelligence (AI) on future education contexts. You are invited to participate by contributing your own speculative story. Your participation will help us better understand various visions of future learning environments shaped by AI.</p>
+      "consent.fullText": `<p>We would like to ask you to participate in a research project by writing a speculative story about the future of artificial intelligence (AI) in education. <br/>Kungliga Tekniska högskolan (KTH) is responsible for this project. The researcher carrying out the research is Iosif Gidiotis.</p>
 
-<h3 style=\"color:#1d4ed8\">Project Specifications</h3>
-<p>As part of this project, you will use a digital scenario writing tool. Upon agreeing to participate, you will be prompted to answer two short questions about your background (teacher, student, researcher, other) and your subject field. Then, you will be presented with 8 themes that have been identified as relevant for the future of AI in education in previous research. You can choose some of the themes based on what interests you or the option to 'write freely'. The choice of themes is only indicative of your interests and not otherwise binding for the scenario writing. After that, you will be prompted to start writing your scenario. The tool has a minimum amount of 80 words (recommended minimum: 150 words) before it lets you submit your story. You are free to exceed that limit if you want. During the process of writing, helpful questions or prompts will appear to inspire you - you are free to follow them or reject them. After completing your story, you are asked to submit your email address if you agree to participate in further research regarding the future of AI in education (voluntary) and to answer some questions that will help us further analyse your story.</p>
-<p>In the end, you have the option to download your story on your device before you submit. Only after clicking the final 'submit' button will your story and your data reach us - your information is not otherwise saved on our research database during the process of navigating the tool.</p>
+<p>Your participation involves: Writing a short speculative story (minimum 80 words) using our digital tool. You'll first answer two questions about your occupation and subject field and then choose among future themes that interest you, before writing your story. In the end, you can choose to answer some feedback questions. This takes about 15–20 minutes.</p>
 
-<h3 style=\"color:#1d4ed8\">Information Collection</h3>
-<ul><li><strong>Written story:</strong> The story you create is stored separately and will not be connected to any identifying personal information.</li><li><strong>Email address (optional):</strong> Only if you choose to provide it.</li><li><strong>Background, subject field:</strong> General demographic information that helps us gauge the audience using the tool.</li></ul>
-<p>The submitted stories and your feedback will be analyzed as part of the research project. Portions of these stories may also be cited or discussed in research publications and presentations, or used in subsequent focus groups or workshop discussions. However, no identifying information will be included in such discussions.</p>
+<h3 style=\"color:#1d4ed8\">What we collect</h3>
+<ul>
+  <li>Your story (stored without identifying information)</li>
+  <li>Basic background info (occupation, subject field)</li>
+  <li>Email address (optional, only if you want to participate in future research)</li>
+</ul>
 
-<h3 style=\"color:#1d4ed8\">Voluntary Participation and Data Protection</h3>
-<p>Your participation in this study is completely voluntary. You may discontinue your participation at any point without providing a reason. Only authorized research team members will have access to data submitted through this project. No data will be shared beyond the immediate research team (see below).<br/>We process your personal data on the basis of your consent, in accordance with Article 6(1)(a) of the <a href=\"https://gdpr-info.eu/art-6-gdpr/\" style=\"color:#1d4ed8\" target=\"_blank\">GDPR</a>, and (if applicable) for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes under Article 9(2)(j).</p>
-<p><a href=\"https://www.kth.se/\" style=\"color:#1d4ed8\" target=\"_blank\">Kungliga Tekniska högskolan (KTH)</a> in Stockholm, Sweden, is the entity responsible for your personal information. When the project concludes, the data collected and generated within the project will be securely stored for archival purposes for at least 5 years.</p>
+<p>We do not believe there are any negative consequences or risks with this data collection. You can choose to stop taking part at any time.</p>
 
-<h3 style=\"color:#1d4ed8\">Concerning Your Rights to Your Data</h3>
-<p>In line with EU data protection regulations (<a href=\"https://gdpr-info.eu/\" style=\"color:#1d4ed8\" target=\"_blank\">GDPR</a>) and relevant national legislation, you have the right to:</p>
-<ul><li>Withdraw your consent without affecting the lawfulness of data processing already carried out before withdrawal.</li><li>Request access to your personal data.</li><li>Have your personal data corrected.</li><li>Have your personal data deleted.</li><li>Have the processing of your personal data restricted.</li></ul>
-<p>Please note these rights can be limited under certain circumstances, such as confidentiality requirements or archival regulations.</p>
+<p>The project will collect and register your responses, which are anonymous. Your responses and results will be handled so that unauthorized persons cannot access them. The survey responses will be stored securely at Kungliga Tekniska högskolan for 10 years after the project ends.</p>
 
-<h3 style=\"color:#1d4ed8\">Data Protection and Complaints</h3>
-<p>If you have questions about how your data is handled or wish to exercise any of your data protection rights, you may contact:<br/><strong>KTH Data Protection Officer (DPO):</strong> <a href=\"mailto:dataskyddsombud@kth.se\" style=\"color:#1d4ed8\">dataskyddsombud@kth.se</a><br/>You also have the right to lodge a complaint with the <a href=\"https://www.imy.se/en/\" style=\"color:#1d4ed8\" target=\"_blank\">Swedish Privacy Protection Agency (imy.se)</a>.</p>
+<p>You do not have the possibility to access your responses afterwards since the story collection is anonymous. The project will be reported in freely available scientific articles (open access) that you can access by contacting the principal researcher.</p>
 
-<h3 style=\"color:#1d4ed8\">Project Responsibility and Contact Information</h3>
-<p><strong>Project Responsible (Researcher):</strong> <a href=\"mailto:gidiotis@kth.se\" style=\"color:#1d4ed8\">gidiotis@kth.se</a><br/><strong>Principal Research Supervisor:</strong> <a href=\"mailto:stefanhr@kth.se\" style=\"color:#1d4ed8\">stefanhr@kth.se</a><br/><strong>Mailing Address:</strong> BRINELLVÄGEN 68, 10044 STOCKHOLM, SWEDEN</p>
-<p><em>Note: Should you wish, you may request a summary of the study's findings once the research is completed by contacting the Project Responsible.</em></p>`,
+<h3 style=\"color:#1d4ed8\">Your rights</h3>
+<p>Your participation is voluntary and you can choose to stop participating at any time. If you choose not to participate or want to stop your participation, you do not need to explain why. If you want to stop your participation, you should not submit your story and responses.</p>
+
+<p>Kungliga Tekniska högskolan is responsible for your personal data. According to the EU General Data Protection Regulation (GDPR), you have the right to access information about you that is processed in the project free of charge, and to have any errors corrected if necessary. You can also request that information about you be deleted and that the processing of your personal data be restricted. However, the right to deletion and restriction of processing of personal data does not apply when the data is necessary for the current research.</p>
+
+<p>If you want to access the data, you should contact the principal researcher Iosif Gidiotis, Kungliga Tekniska högskolan, Brinellvägen 68, 114 28 Stockholm, email <a href="mailto:gidiotis@kth.se" style="color:#1d4ed8">gidiotis@kth.se</a>.</p>
+
+<h3 style=\"color:#1d4ed8\">Data protection and complaints</h3>
+<p>The Data Protection Officer can be reached at Kungliga Tekniska högskolan, Attn: Data Protection Officer, Brinellvägen 8, 100 44 Stockholm, phone 08-7908752, email <a href="mailto:dataskyddsombud@kth.se" style="color:#1d4ed8">dataskyddsombud@kth.se</a>.</p>
+
+<p>If you are dissatisfied with how your personal data is processed, you have the right to file a complaint with the <a href="https://www.imy.se/en/" target="_blank" style="color:#1d4ed8">Swedish Authority for Privacy Protection (Integritetsskyddsmyndigheten)</a>.</p>
+
+<h3 style=\"color:#1d4ed8\">Contact</h3>
+<ul>
+  <li><strong>Project Responsible (Researcher):</strong> <a href="mailto:gidiotis@kth.se" style="color:#1d4ed8">gidiotis@kth.se</a>, Brinellvägen 68, 114 28 Stockholm</li>
+  <li><strong>Principal Supervisor of the research:</strong> <a href="mailto:stefanhr@kth.se" style="color:#1d4ed8">stefanhr@kth.se</a></li>
+  <li><strong>Data Protection Officer:</strong> <a href="mailto:dataskyddsombud@kth.se" style="color:#1d4ed8">dataskyddsombud@kth.se</a></li>
+</ul>`,
       "consent.checkbox": "I have read and agree to participate in this research study. I understand how my data will be used.",
       "checkin.title": "Check-in",
       "checkin.intro": "Let's start with a quick check-in before we begin.",
