@@ -147,42 +147,42 @@ const resources = {
       "back": "Tillbaka",
       "and": "och",
       "consent.title": "Samtyckesblankett - Forskningsprojekt",
-      "consent.intro": "<span style=\"color:#1d4ed8\"><strong>Att skriva spekulativa berättelser hjälper oss att föreställa oss alternativa – önskade eller oönskade – utbildningsmiljöer eller scenarier. Det kan ge insikter som bidrar till att forma våra nuvarande beslut och perspektiv.</strong></span>",
-      "consent.fullText": `<p>Syftet med detta forskningsprojekt är att utforska möjligheterna med spekulativt berättande som metod för att undersöka den långsiktiga påverkan av artificiell intelligens (AI) på framtidens utbildningskontexter. Du inbjuds att delta genom att bidra med en egen spekulativ berättelse. Ditt deltagande kommer att bidra till en djupare förståelse för olika visioner av framtida lärmiljöer präglade av AI.</p>
+"consent.intro": "<span style=\"color:#1d4ed8\"><strong>Att skriva spekulativa berättelser hjälper oss att föreställa oss alternativa – önskade eller oönskade – utbildningsmiljöer eller scenarier. Det kan ge insikter som bidrar till att forma våra nuvarande beslut och perspektiv.</strong></span>",
+"consent.fullText": `<p>Vi vill fråga dig om du vill delta i ett forskningsprojekt genom att skriva en spekulativ berättelse om artificiell intelligens (AI) inom framtidens utbildning.<br/>Forskningshuvudman för projektet är Kungliga Tekniska högskolan. Med forskningshuvudman menas den organisation som är ansvarig för projektet. Forskaren som genomför forskningen är Iosif Gidiotis.</p>
 
-<h2 style=\"color:#1d4ed8\">Projektspecifikationer</h2>
-<p>Som deltagare i detta projekt kommer du att använda ett digitalt verktyg för scenarioskrivande. När du har samtyckt till att delta, ombeds du besvara två korta frågor om din bakgrund (lärare, student, forskare eller annat) samt ditt ämnesområde.</p>
-<p>Därefter kommer du att få ta del av åtta teman som tidigare forskning har identifierat som relevanta för AI:s framtid inom utbildning. Du kan välja de teman som intresserar dig, eller alternativt välja att "skriva fritt". Temana fungerar enbart som inspiration och är inte bindande för själva scenarioskrivandet.</p>
-<p>När du gjort ditt val uppmanas du att börja skriva ditt scenario. Verktyget kräver minst 80 ord (rekommenderat minimum: 150 ord) innan du kan skicka in din berättelse, men du är naturligtvis fri att skriva längre. Under skrivprocessen kommer olika uppmaningar och reflekterande frågor att dyka upp för att inspirera dig – du väljer själv om du vill använda dem eller inte.</p>
-<p>När din berättelse är färdig har du möjlighet att (frivilligt) lämna din e-postadress om du vill delta i framtida forskning om AI i utbildning. Du ombeds också svara på några avslutande frågor som hjälper oss att analysera din berättelse ytterligare.</p>
-<p>Slutligen kan du ladda ner din berättelse till din egen enhet. Först när du klickar på den slutliga "skicka"-knappen skickas din berättelse och dina uppgifter till oss. Ingen information sparas under tiden du använder verktyget, innan du aktivt väljer att skicka in den.</p>
+<p>Ditt deltagande i projektet innebär: Att skriva en kort spekulativ berättelse (minimum 80 ord) med hjälp av vårt digitala verktyg. Du kommer först att svara på två frågor om din yrkesroll och ditt ämnesområde och sedan välja bland framtidsteman som intresserar dig, innan du skriver din berättelse. Till slut kan du välja att svara på några feedback-frågor. Detta tar ca 15–20 minuter.</p>
 
-<h2 style=\"color:#1d4ed8\">Informationsinsamling</h2>
-<ul><li><strong>Skriven berättelse:</strong> Berättelsen du skapar lagras separat och kommer inte att kopplas till någon identifierande personlig information.</li><li><strong>E-postadress (frivillig):</strong> Endast om du väljer att tillhandahålla den.</li><li><strong>Bakgrund, ämnesområde:</strong> Allmän demografisk information som hjälper oss att bedöma publiken som använder verktyget.</li></ul>
-<p>De inlämnade berättelserna och din återkoppling kommer att analyseras som en del av forskningsprojektet. Delar av dessa berättelser kan också citeras eller diskuteras i forskningspublikationer och presentationer, eller användas i efterföljande fokusgrupper eller workshopdiskussioner. Dock kommer ingen identifierande information att inkluderas i sådana diskussioner.</p>
-
-<h2 style=\"color:#1d4ed8\">Frivilligt deltagande och dataskydd</h2>
-<p>Ditt deltagande i denna studie är helt frivilligt. Du kan när som helst avbryta ditt deltagande utan att ange någon anledning. Endast auktoriserade medlemmar av forskningsteamet kommer att ha tillgång till de uppgifter som lämnas in inom ramen för detta projekt. Inga data kommer att delas utanför det omedelbara forskningsteamet (se nedan).</p>
-<p>Vi behandlar dina personuppgifter med stöd av ditt samtycke, i enlighet med <a href="https://gdpr-info.eu/art-6-gdpr/" style="color:#1d4ed8" target="_blank">artikel 6(1)(a) i GDPR</a>, och – om tillämpligt – för arkiveringsändamål i allmänhetens intresse, för vetenskapliga eller historiska forskningsändamål eller för statistiska ändamål, i enlighet med <a href="https://gdpr-info.eu/art-9-gdpr/#2-j" style="color:#1d4ed8" target="_blank">artikel 9(2)(j)</a>.</p>
-<p><a href="https://www.kth.se/" style="color:#1d4ed8" target="_blank">Kungliga Tekniska högskolan (KTH)</a> i Stockholm, Sverige, är den personuppgiftsansvariga organisationen. När projektet avslutas kommer insamlade och genererade data att lagras säkert i minst fem år för arkiveringsändamål.</p>
-
-<h2 style=\"color:#1d4ed8\">Dina rättigheter gällande dina data</h2>
-<p>I enlighet med EU:s dataskyddsförordning (<a href="https://gdpr-info.eu/" style="color:#1d4ed8" target="_blank">GDPR</a>) och relevant nationell lagstiftning har du rätt att:</p>
+<h2 style=\"color:#1d4ed8\">Vad vi samlar in</h2>
 <ul>
-  <li>Återkalla ditt samtycke utan att det påverkar lagligheten av den behandling som redan utförts.</li>
-  <li>Begära tillgång till dina personuppgifter.</li>
-  <li>Få dina personuppgifter rättade.</li>
-  <li>Få dina personuppgifter raderade.</li>
-  <li>Begränsa behandlingen av dina personuppgifter.</li>
+  <li>Din berättelse (lagras utan identifierande information)</li>
+  <li>Grundläggande bakgrundsinformation (yrkesroll, ämnesområde)</li>
+  <li>E-postadress (frivilligt, endast om du vill delta i framtida forskning)</li>
 </ul>
-<p>Observera att vissa rättigheter kan vara begränsade i särskilda fall, till exempel på grund av sekretesskrav eller lagstadgade arkiveringsregler.</p>
+
+<p>Vi anser inte att det finns negativa följder eller risker med denna datainsamling. Du kan när som helst välja att avbryta deltagandet.</p>
+
+<p>Projektet kommer att samla in och registrera dina svar som är anonyma. Dina svar och dina resultat kommer att behandlas så att inte obehöriga kan ta del av dem. Svaren kommer att lagras på ett säkert sätt vid Kungliga Tekniska högskolan under 10 år efter projektets avslut.</p>
+
+<p>Du har inte möjlighet att ta del av dina svar i efterhand då berättelseinsamlingen är anonym. Projektet kommer att redovisas i fritt tillgängliga vetenskapliga artiklar (open access) som du har möjlighet att ta del av genom att kontakta projektansvarig.</p>
+
+<h2 style=\"color:#1d4ed8\">Dina rättigheter</h2>
+<p>Ditt deltagande är frivilligt och du kan när som helst välja att avbryta deltagandet. Om du väljer att inte delta eller vill avbryta ditt deltagande behöver du inte uppge varför. Om du vill avbryta ditt deltagande ska du inte skicka in din berättelse och dina svar.</p>
+
+<p>Ansvarig för dina personuppgifter är Kungliga Tekniska högskolan. Enligt EU:s dataskyddsförordning har du rätt att kostnadsfritt få ta del av de uppgifter om dig som hanteras i projektet, och vid behov få eventuella fel rättade. Du kan också begära att uppgifter om dig raderas samt att behandlingen av dina personuppgifter begränsas. Rätten till radering och till begränsning av behandling av personuppgifter gäller dock inte när uppgifterna är nödvändiga för den aktuella forskningen.</p>
+
+<p>Om du vill ta del av uppgifterna ska du kontakta huvudansvarig forskare Iosif Gidiotis, Kungliga Tekniska högskolan, Brinellvägen 68, 114 28 Stockholm, e-post <a href="mailto:gidiotis@kth.se" style="color:#1d4ed8">gidiotis@kth.se</a>.</p>
 
 <h2 style=\"color:#1d4ed8\">Dataskydd och klagomål</h2>
-<p>Om du har några frågor om hur dina data hanteras eller vill utöva någon av dina dataskyddsrättigheter kan du kontakta:<br/><strong>KTH Dataskyddsombud (DPO):</strong> <a href=\"mailto:dataskyddsombud@kth.se\" style=\"color:#1d4ed8\">dataskyddsombud@kth.se</a><br/>Du har också rätt att lämna in ett klagomål till <a href=\"https://www.imy.se/\" style=\"color:#1d4ed8\" target=\"_blank\">Integritetsskyddsmyndigheten (imy.se)</a>.</p>
+<p>Dataskyddsombud nås på Kungliga Tekniska högskolan, Att: Dataskyddsombud, Brinellvägen 8, 100 44 Stockholm, telefon 08-7908752, e-post <a href="mailto:dataskyddsombud@kth.se" style="color:#1d4ed8">dataskyddsombud@kth.se</a>.</p>
 
-<h2 style=\"color:#1d4ed8\">Projektansvar och kontaktinformation</h2>
-<p><strong>Projektansvarig (Forskare):</strong> <a href=\"mailto:gidiotis@kth.se\" style=\"color:#1d4ed8\">gidiotis@kth.se</a><br/><strong>Huvudhandledare för forskning:</strong> <a href=\"mailto:stefanhr@kth.se\" style=\"color:#1d4ed8\">stefanhr@kth.se</a><br/><strong>Postadress:</strong> BRINELLVÄGEN 68, 10044 STOCKHOLM, SWEDEN</p>
-<p><em>Observera: Om du så önskar kan du begära en sammanfattning av studiens resultat när forskningen är slutförd genom att kontakta projektansvariga.</em></p>`,
+<p>Om du är missnöjd med hur dina personuppgifter behandlas har du rätt att ge in klagomål till <a href="https://www.imy.se/" target="_blank" style="color:#1d4ed8">Integritetsskyddsmyndigheten</a>, som är tillsynsmyndighet.</p>
+
+<h2 style=\"color:#1d4ed8\">Kontaktuppgifter</h2>
+<ul>
+  <li><strong>Projektansvarig (Forskare):</strong> <a href="mailto:gidiotis@kth.se" style="color:#1d4ed8">gidiotis@kth.se</a>, Brinellvägen 68, 114 28 Stockholm</li>
+  <li><strong>Huvudhandledare för forskning:</strong> <a href="mailto:stefanhr@kth.se" style="color:#1d4ed8">stefanhr@kth.se</a></li>
+  <li><strong>Dataskyddsombud:</strong> <a href="mailto:dataskyddsombud@kth.se" style="color:#1d4ed8">dataskyddsombud@kth.se</a></li>
+</ul>`,
       "consent.checkbox": "Jag har läst och samtycker till att delta i denna forskningsstudie. Jag förstår hur mina data kommer att användas.",
       "checkin.title": "Incheckning",
       "checkin.intro": "Vi börjar med en snabb incheckning innan vi sätter igång.",
