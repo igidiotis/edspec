@@ -33,7 +33,7 @@ const resources = {
 <h3 style=\"color:#1d4ed8\">Your rights</h3>
 <p>Your participation is voluntary and you can choose to stop participating at any time. If you choose not to participate or want to stop your participation, you do not need to explain why. If you want to stop your participation, you should not submit your story and responses.</p>
 
-<p>Kungliga Tekniska högskolan is responsible for your personal data. According to the EU General Data Protection Regulation (GDPR), you have the right to access information about you that is processed in the project free of charge, and to have any errors corrected if necessary. You can also request that information about you be deleted and that the processing of your personal data be restricted. However, the right to deletion and restriction of processing of personal data does not apply when the data is necessary for the current research.</p>
+<p>Kungliga Tekniska högskolan is responsible for your personal data. If you choose to share you email with us in the (final) feedback step, according to the EU General Data Protection Regulation (GDPR), you have the right to access information about you that is processed in the project free of charge, and to have any errors corrected if necessary. You can also request that information about you be deleted and that the processing of your personal data be restricted. However, the right to deletion and restriction of processing of personal data does not apply if you agree to participate but do not share your email address (identifying information).</p>
 
 <p>If you want to access the data, you should contact the principal researcher Iosif Gidiotis, Kungliga Tekniska högskolan, Brinellvägen 68, 114 28 Stockholm, email <a href="mailto:gidiotis@kth.se" style="color:#1d4ed8">gidiotis@kth.se</a>.</p>
 
@@ -46,7 +46,6 @@ const resources = {
 <ul>
   <li><strong>Project Responsible (Researcher):</strong> <a href="mailto:gidiotis@kth.se" style="color:#1d4ed8">gidiotis@kth.se</a>, Brinellvägen 68, 114 28 Stockholm</li>
   <li><strong>Principal Supervisor of the research:</strong> <a href="mailto:stefanhr@kth.se" style="color:#1d4ed8">stefanhr@kth.se</a></li>
-  <li><strong>Data Protection Officer:</strong> <a href="mailto:dataskyddsombud@kth.se" style="color:#1d4ed8">dataskyddsombud@kth.se</a></li>
 </ul>`,
       "consent.checkbox": "I have read and agree to participate in this research study. I understand how my data will be used.",
       "checkin.title": "Check-in",
@@ -178,7 +177,7 @@ const resources = {
 <h2 style=\"color:#1d4ed8\">Dina rättigheter</h2>
 <p>Ditt deltagande är frivilligt och du kan när som helst välja att avbryta deltagandet. Om du väljer att inte delta eller vill avbryta ditt deltagande behöver du inte uppge varför. Om du vill avbryta ditt deltagande ska du inte skicka in din berättelse och dina svar.</p>
 
-<p>Ansvarig för dina personuppgifter är Kungliga Tekniska högskolan. Enligt EU:s dataskyddsförordning har du rätt att kostnadsfritt få ta del av de uppgifter om dig som hanteras i projektet, och vid behov få eventuella fel rättade. Du kan också begära att uppgifter om dig raderas samt att behandlingen av dina personuppgifter begränsas. Rätten till radering och till begränsning av behandling av personuppgifter gäller dock inte när uppgifterna är nödvändiga för den aktuella forskningen.</p>
+<p>Ansvarig för dina personuppgifter är Kungliga Tekniska högskolan. Om du delar med dig epost-addressen, enligt EU:s dataskyddsförordning har du rätt att kostnadsfritt få ta del av de uppgifter om dig som hanteras i projektet, och vid behov få eventuella fel rättade. Du kan också begära att uppgifter om dig raderas samt att behandlingen av dina personuppgifter begränsas. Rätten till radering och till begränsning av behandling av personuppgifter gäller dock inte när personliga uppgifterna delas inte i systemet (dvs. om du inte ger din epost adress).</p>
 
 <p>Om du vill ta del av uppgifterna ska du kontakta huvudansvarig forskare Iosif Gidiotis, Kungliga Tekniska högskolan, Brinellvägen 68, 114 28 Stockholm, e-post <a href="mailto:gidiotis@kth.se" style="color:#1d4ed8">gidiotis@kth.se</a>.</p>
 
@@ -191,7 +190,6 @@ const resources = {
 <ul>
   <li><strong>Projektansvarig (Forskare):</strong> <a href="mailto:gidiotis@kth.se" style="color:#1d4ed8">gidiotis@kth.se</a>, Brinellvägen 68, 114 28 Stockholm</li>
   <li><strong>Huvudhandledare för forskning:</strong> <a href="mailto:stefanhr@kth.se" style="color:#1d4ed8">stefanhr@kth.se</a></li>
-  <li><strong>Dataskyddsombud:</strong> <a href="mailto:dataskyddsombud@kth.se" style="color:#1d4ed8">dataskyddsombud@kth.se</a></li>
 </ul>`,
       "consent.checkbox": "Jag har läst och samtycker till att delta i denna forskningsstudie. Jag förstår hur mina data kommer att användas.",
       "checkin.title": "Incheckning",
