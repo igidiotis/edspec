@@ -22,9 +22,11 @@ const ConsentScreen: React.FC = () => {
         </div>
       </div>
       <div className="mb-6">
-        <div className="bg-gray-50 p-8 rounded-md my-4 text-base text-justify prose prose-base prose-ul:pl-6 prose-li:marker:text-blue-500" style={{ fontSize: '1.08rem', lineHeight: '2.1', textAlign: 'justify' }}
-          dangerouslySetInnerHTML={{ __html: `${t('consent.intro')}<br/><br/>${t('consent.fullText')}` }}
-        />
+      <div 
+  className="bg-gray-50 p-6 rounded-md my-4 overflow-y-auto max-h-[65vh] text-base text-justify prose prose-base prose-ul:pl-6 prose-li:marker:text-blue-500" 
+  style={{ fontSize: '0.95rem', lineHeight: '1.8', textAlign: 'justify' }}
+  dangerouslySetInnerHTML={{ __html: `${t('consent.intro')}<br/><br/>${t('consent.fullText')}` }}
+/>
         <div className="flex items-start mt-6">
           <div className="flex items-center h-5">
             <input
