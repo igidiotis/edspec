@@ -7,8 +7,8 @@ const CheckInScreen: React.FC = () => {
   const { setCurrentStep, checkInData, setCheckInData } = useApp();
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
-    occupation: checkInData.occupation || '',
-    otherOccupation: checkInData.otherOccupation || '',
+    background: checkInData.background || '',
+    otherBackground: checkInData.otherBackground || '',
     discipline: checkInData.discipline || ''
   });
   
@@ -27,8 +27,8 @@ const CheckInScreen: React.FC = () => {
   };
   
   const isComplete = 
-    formData.occupation && 
-    (formData.occupation !== 'Other' || formData.otherOccupation) &&
+    formData.background && 
+    (formData.background !== 'Other' || formData.otherBackground) &&
     formData.discipline;
   
   return (
@@ -38,35 +38,36 @@ const CheckInScreen: React.FC = () => {
       
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label htmlFor="occupation" className="block text-sm font-medium text-gray-700 mb-1">
-            {t('checkin.occupation')}
+          <label htmlFor="background" className="block text-sm font-medium text-gray-700 mb-1">
+            {t('checkin.background')}
           </label>
           <select
-            id="occupation"
-            name="occupation"
-            value={formData.occupation}
+            id="background"
+            name="background"
+            value={formData.background}
             onChange={handleChange}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
             required
           >
-            <option value="" disabled>{t('checkin.occupationPlaceholder')}</option>
-            <option value="Teacher">{t('checkin.teacher')}</option>
-            <option value="Student">{t('checkin.student')}</option>
+            <option value="" disabled>{t('checkin.backgroundPlaceholder')}</option>
+            <option value="Academic teacher">{t('checkin.academicTeacher')}</option>
+            <option value="K12 teacher">{t('checkin.k12Teacher')}</option>
             <option value="Researcher">{t('checkin.researcher')}</option>
+            <option value="Student">{t('checkin.student')}</option>
             <option value="Other">{t('checkin.other')}</option>
           </select>
         </div>
 
-        {formData.occupation === 'Other' && (
+        {formData.background === 'Other' && (
           <div>
-            <label htmlFor="otherOccupation" className="block text-sm font-medium text-gray-700 mb-1">
-              {t('checkin.otherOccupation')}
+            <label htmlFor="otherBackground" className="block text-sm font-medium text-gray-700 mb-1">
+              {t('checkin.otherBackground')}
             </label>
             <input
               type="text"
-              id="otherOccupation"
-              name="otherOccupation"
-              value={formData.otherOccupation}
+              id="otherBackground"
+              name="otherBackground"
+              value={formData.otherBackground}
               onChange={handleChange}
               className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
               required

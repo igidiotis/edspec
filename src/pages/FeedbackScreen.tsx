@@ -64,8 +64,8 @@ const FeedbackScreen: React.FC = () => {
     // Prepare data for Supabase
     const submission = {
       has_consented: hasConsented,
-      occupation: checkInData.occupation,
-      other_occupation: checkInData.otherOccupation,
+      background: checkInData.background,
+      other_background: checkInData.otherBackground,
       discipline: checkInData.discipline,
       selected_themes: selectedCards,
       story_content: storyContent,

@@ -16,11 +16,11 @@ const resources = {
       "consent.fullText": `<p>The purpose of this research project is to examine the potential of using speculative storywriting to explore the long-term impact of artificial intelligence (AI) on future education contexts. You are invited to participate by contributing your own speculative story. Your participation will help us better understand various visions of future learning environments shaped by AI.</p>
 
 <h3 style=\"color:#1d4ed8\">Project Specifications</h3>
-<p>As part of this project, you will use a digital scenario writing tool. Upon agreeing to participate, you will be prompted to answer two short questions about your occupation (teacher, student, researcher, other) and your subject field. Then, you will be presented with 8 themes that have been identified as relevant for the future of AI in education in previous research. You can choose some of the themes based on what interests you or the option to 'write freely'. The choice of themes is only indicative of your interests and not otherwise binding for the scenario writing. After that, you will be prompted to start writing your scenario. The tool has a minimum amount of 80 words (recommended minimum: 150 words) before it lets you submit your story. You are free to exceed that limit if you want. During the process of writing, helpful questions or prompts will appear to inspire you - you are free to follow them or reject them. After completing your story, you are asked to submit your email address if you agree to participate in further research regarding the future of AI in education (voluntary) and to answer some questions that will help us further analyse your story.</p>
+<p>As part of this project, you will use a digital scenario writing tool. Upon agreeing to participate, you will be prompted to answer two short questions about your background (teacher, student, researcher, other) and your subject field. Then, you will be presented with 8 themes that have been identified as relevant for the future of AI in education in previous research. You can choose some of the themes based on what interests you or the option to 'write freely'. The choice of themes is only indicative of your interests and not otherwise binding for the scenario writing. After that, you will be prompted to start writing your scenario. The tool has a minimum amount of 80 words (recommended minimum: 150 words) before it lets you submit your story. You are free to exceed that limit if you want. During the process of writing, helpful questions or prompts will appear to inspire you - you are free to follow them or reject them. After completing your story, you are asked to submit your email address if you agree to participate in further research regarding the future of AI in education (voluntary) and to answer some questions that will help us further analyse your story.</p>
 <p>In the end, you have the option to download your story on your device before you submit. Only after clicking the final 'submit' button will your story and your data reach us - your information is not otherwise saved on our research database during the process of navigating the tool.</p>
 
 <h3 style=\"color:#1d4ed8\">Information Collection</h3>
-<ul><li><strong>Written story:</strong> The story you create is stored separately and will not be connected to any identifying personal information.</li><li><strong>Email address (optional):</strong> Only if you choose to provide it.</li><li><strong>Occupation, subject field:</strong> General demographic information that helps us gauge the audience using the tool.</li></ul>
+<ul><li><strong>Written story:</strong> The story you create is stored separately and will not be connected to any identifying personal information.</li><li><strong>Email address (optional):</strong> Only if you choose to provide it.</li><li><strong>Background, subject field:</strong> General demographic information that helps us gauge the audience using the tool.</li></ul>
 <p>The submitted stories and your feedback will be analyzed as part of the research project. Portions of these stories may also be cited or discussed in research publications and presentations, or used in subsequent focus groups or workshop discussions. However, no identifying information will be included in such discussions.</p>
 
 <h3 style=\"color:#1d4ed8\">Voluntary Participation and Data Protection</h3>
@@ -41,13 +41,14 @@ const resources = {
       "consent.checkbox": "I have read and agree to participate in this research study. I understand how my data will be used.",
       "checkin.title": "Check-in",
       "checkin.intro": "Let's start with a quick check-in before we begin.",
-      "checkin.occupation": "Occupation",
-      "checkin.occupationPlaceholder": "Select your occupation",
-      "checkin.teacher": "Teacher",
-      "checkin.student": "Student",
+      "checkin.background": "Background",
+      "checkin.backgroundPlaceholder": "Select your background",
+      "checkin.academicTeacher": "Academic teacher (e.g. lecturer, professor)",
+      "checkin.k12Teacher": "K12 teacher",
       "checkin.researcher": "Researcher",
+      "checkin.student": "Student",
       "checkin.other": "Other",
-      "checkin.otherOccupation": "Please specify your occupation",
+      "checkin.otherBackground": "Please specify your background",
       "checkin.discipline": "Subject discipline",
       "checkin.disciplinePlaceholder": "e.g. Education, engineering, mathematics",
       "cards.title": "Select Themes",
@@ -139,7 +140,7 @@ const resources = {
   },
   sv: {
     translation: {
-      "appTitle": "AI:s framtid inom utbildning",
+      "appTitle": "AI och framtidens utbildning",
       "footer": "2025 Skapad av <1>Iosif Gidiotis</1>",
       "swedishVersion": "Gå till den svenska versionen här",
       "continue": "Fortsätt",
@@ -150,14 +151,14 @@ const resources = {
       "consent.fullText": `<p>Syftet med detta forskningsprojekt är att utforska möjligheterna med spekulativt berättande som metod för att undersöka den långsiktiga påverkan av artificiell intelligens (AI) på framtidens utbildningskontexter. Du inbjuds att delta genom att bidra med en egen spekulativ berättelse. Ditt deltagande kommer att bidra till en djupare förståelse för olika visioner av framtida lärmiljöer präglade av AI.</p>
 
 <h2 style=\"color:#1d4ed8\">Projektspecifikationer</h2>
-<p>Som deltagare i detta projekt kommer du att använda ett digitalt verktyg för scenarioskrivande. När du har samtyckt till att delta, ombeds du besvara två korta frågor om din yrkesroll (lärare, student, forskare eller annat) samt ditt ämnesområde.</p>
+<p>Som deltagare i detta projekt kommer du att använda ett digitalt verktyg för scenarioskrivande. När du har samtyckt till att delta, ombeds du besvara två korta frågor om din bakgrund (lärare, student, forskare eller annat) samt ditt ämnesområde.</p>
 <p>Därefter kommer du att få ta del av åtta teman som tidigare forskning har identifierat som relevanta för AI:s framtid inom utbildning. Du kan välja de teman som intresserar dig, eller alternativt välja att "skriva fritt". Temana fungerar enbart som inspiration och är inte bindande för själva scenarioskrivandet.</p>
 <p>När du gjort ditt val uppmanas du att börja skriva ditt scenario. Verktyget kräver minst 80 ord (rekommenderat minimum: 150 ord) innan du kan skicka in din berättelse, men du är naturligtvis fri att skriva längre. Under skrivprocessen kommer olika uppmaningar och reflekterande frågor att dyka upp för att inspirera dig – du väljer själv om du vill använda dem eller inte.</p>
 <p>När din berättelse är färdig har du möjlighet att (frivilligt) lämna din e-postadress om du vill delta i framtida forskning om AI i utbildning. Du ombeds också svara på några avslutande frågor som hjälper oss att analysera din berättelse ytterligare.</p>
 <p>Slutligen kan du ladda ner din berättelse till din egen enhet. Först när du klickar på den slutliga "skicka"-knappen skickas din berättelse och dina uppgifter till oss. Ingen information sparas under tiden du använder verktyget, innan du aktivt väljer att skicka in den.</p>
 
 <h2 style=\"color:#1d4ed8\">Informationsinsamling</h2>
-<ul><li><strong>Skriven berättelse:</strong> Berättelsen du skapar lagras separat och kommer inte att kopplas till någon identifierande personlig information.</li><li><strong>E-postadress (frivillig):</strong> Endast om du väljer att tillhandahålla den.</li><li><strong>Yrkesroll, ämnesområde:</strong> Allmän demografisk information som hjälper oss att bedöma publiken som använder verktyget.</li></ul>
+<ul><li><strong>Skriven berättelse:</strong> Berättelsen du skapar lagras separat och kommer inte att kopplas till någon identifierande personlig information.</li><li><strong>E-postadress (frivillig):</strong> Endast om du väljer att tillhandahålla den.</li><li><strong>Bakgrund, ämnesområde:</strong> Allmän demografisk information som hjälper oss att bedöma publiken som använder verktyget.</li></ul>
 <p>De inlämnade berättelserna och din återkoppling kommer att analyseras som en del av forskningsprojektet. Delar av dessa berättelser kan också citeras eller diskuteras i forskningspublikationer och presentationer, eller användas i efterföljande fokusgrupper eller workshopdiskussioner. Dock kommer ingen identifierande information att inkluderas i sådana diskussioner.</p>
 
 <h2 style=\"color:#1d4ed8\">Frivilligt deltagande och dataskydd</h2>
@@ -185,13 +186,14 @@ const resources = {
       "consent.checkbox": "Jag har läst och samtycker till att delta i denna forskningsstudie. Jag förstår hur mina data kommer att användas.",
       "checkin.title": "Incheckning",
       "checkin.intro": "Vi börjar med en snabb incheckning innan vi sätter igång.",
-      "checkin.occupation": "Yrke",
-      "checkin.occupationPlaceholder": "Välj ditt yrke",
-      "checkin.teacher": "Lärare",
-      "checkin.student": "Student",
+      "checkin.background": "Bakgrund",
+      "checkin.backgroundPlaceholder": "Välj din bakgrund",
+      "checkin.academicTeacher": "Akademisk lärare (t.ex. lektor, professor)",
+      "checkin.k12Teacher": "Grund- eller gymnasielärare",
       "checkin.researcher": "Forskare",
+      "checkin.student": "Student",
       "checkin.other": "Annat",
-      "checkin.otherOccupation": "Vänligen ange ditt yrke",
+      "checkin.otherBackground": "Vänligen ange din bakgrund",
       "checkin.discipline": "Ämnesområde",
       "checkin.disciplinePlaceholder": "t.ex. utbildning, teknik, matematik",
       "cards.title": "Välj teman",
