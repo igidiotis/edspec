@@ -35,7 +35,7 @@ const resources = {
 
 <p>Kungliga Tekniska högskolan is responsible for your personal data. If you choose to share you email with us in the (final) feedback step, according to the EU General Data Protection Regulation (GDPR), you have the right to access information about you that is processed in the project free of charge, and to have any errors corrected if necessary. You can also request that information about you be deleted and that the processing of your personal data be restricted. However, the right to deletion and restriction of processing of personal data does not apply if you agree to participate but do not share your email address (identifying information).</p>
 
-<p>If you want to access the data, you should contact the principal researcher Iosif Gidiotis, Kungliga Tekniska högskolan, Brinellvägen 68, 114 28 Stockholm, email <a href="mailto:gidiotis@kth.se" style="color:#1d4ed8">gidiotis@kth.se</a>.</p>
+<p>If you have questions about the data you provided, you should contact the principal researcher Iosif Gidiotis, Kungliga Tekniska högskolan, Brinellvägen 68, 114 28 Stockholm, email <a href="mailto:gidiotis@kth.se" style="color:#1d4ed8">gidiotis@kth.se</a>.</p>
 
 <h3 style=\"color:#1d4ed8\">Data protection and complaints</h3>
 <p>The Data Protection Officer can be reached at Kungliga Tekniska högskolan, Attn: Data Protection Officer, Brinellvägen 8, 100 44 Stockholm, phone 08-7908752, email <a href="mailto:dataskyddsombud@kth.se" style="color:#1d4ed8">dataskyddsombud@kth.se</a>.</p>
@@ -179,7 +179,7 @@ const resources = {
 
 <p>Ansvarig för dina personuppgifter är Kungliga Tekniska högskolan. Om du delar med dig epost-addressen, enligt EU:s dataskyddsförordning har du rätt att kostnadsfritt få ta del av de uppgifter om dig som hanteras i projektet, och vid behov få eventuella fel rättade. Du kan också begära att uppgifter om dig raderas samt att behandlingen av dina personuppgifter begränsas. Rätten till radering och till begränsning av behandling av personuppgifter gäller dock inte när personliga uppgifterna delas inte i systemet (dvs. om du inte ger din epost adress).</p>
 
-<p>Om du vill ta del av uppgifterna ska du kontakta huvudansvarig forskare Iosif Gidiotis, Kungliga Tekniska högskolan, Brinellvägen 68, 114 28 Stockholm, e-post <a href="mailto:gidiotis@kth.se" style="color:#1d4ed8">gidiotis@kth.se</a>.</p>
+<p>Om du har frågor kring uppgifterna ska du kontakta huvudansvarig forskare Iosif Gidiotis, Kungliga Tekniska högskolan, Brinellvägen 68, 114 28 Stockholm, e-post <a href="mailto:gidiotis@kth.se" style="color:#1d4ed8">gidiotis@kth.se</a>.</p>
 
 <h2 style=\"color:#1d4ed8\">Dataskydd och klagomål</h2>
 <p>Dataskyddsombud nås på Kungliga Tekniska högskolan, Att: Dataskyddsombud, Brinellvägen 8, 100 44 Stockholm, telefon 08-7908752, e-post <a href="mailto:dataskyddsombud@kth.se" style="color:#1d4ed8">dataskyddsombud@kth.se</a>.</p>
