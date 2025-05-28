@@ -207,7 +207,7 @@ const resources = {
       "checkin.discipline": "Ämnesområde",
       "checkin.disciplinePlaceholder": "t.ex. utbildning, teknik, matematik",
       "cards.title": "Välj teman",
-      "cards.intro": "Vad är du mest intresserad av när det gäller framtidens utbildning? Välj ett eller flera teman som känns intressanta för dig och som kan ge inspiration till din berättelse om hur AI-integrerad utbildning kan se ut i framtiden. Alternativt kan du trycka på 'Skriv fritt' för att skriva din berättelse utan någon tema.
+      "cards.intro": "Vad är du mest intresserad av när det gäller framtidens utbildning? Välj ett eller flera teman som känns intressanta för dig och som kan ge inspiration till din berättelse om hur AI-integrerad utbildning kan se ut i framtiden. Alternativt kan du trycka på 'Skriv fritt' för att skriva din berättelse utan någon tema.",
       "cards.error": "Vänligen välj minst ett tema",
       "writing.title": "Skriv din berättelse",
       "writing.intro": "Inspirerad av {{inspiration}}, skriv en spekulativ berättelse om AI:s framtid inom utbildning.",
