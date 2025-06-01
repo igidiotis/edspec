@@ -6,6 +6,7 @@ interface CheckInData {
   background: string;
   otherBackground: string;
   discipline: string;
+  country: string;
 }
 
 interface FeedbackData {
@@ -41,7 +42,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [checkInData, setCheckInData] = useState<CheckInData>({
     background: '',
     otherBackground: '',
-    discipline: ''
+    discipline: '',
+    country: ''
   });
   const [selectedCards, setSelectedCards] = useState<string[]>([]);
   const [storyContent, setStoryContent] = useState('');
