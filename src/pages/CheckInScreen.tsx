@@ -5,11 +5,12 @@ import { useTranslation } from 'react-i18next';
 
 const CheckInScreen: React.FC = () => {
   const { setCurrentStep, checkInData, setCheckInData } = useApp();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [formData, setFormData] = useState({
     background: checkInData.background || '',
     otherBackground: checkInData.otherBackground || '',
-    discipline: checkInData.discipline || ''
+    discipline: checkInData.discipline || '',
+    country: checkInData.country || (i18n.language === 'sv' ? 'Sverige' : '')
   });
   
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>) => {
@@ -29,7 +30,8 @@ const CheckInScreen: React.FC = () => {
   const isComplete = 
     formData.background && 
     (formData.background !== 'Other' || formData.otherBackground) &&
-    formData.discipline;
+    formData.discipline &&
+    formData.country;
   
   return (
     <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-sm p-6 animate-fade-in">
@@ -87,6 +89,22 @@ const CheckInScreen: React.FC = () => {
             onChange={handleChange}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
             placeholder={t('checkin.disciplinePlaceholder')}
+            required
+          />
+        </div>
+
+        <div>
+          <label htmlFor="country" className="block text-sm font-medium text-gray-700 mb-1">
+            {t('checkin.country')}
+          </label>
+          <input
+            type="text"
+            id="country"
+            name="country"
+            value={formData.country}
+            onChange={handleChange}
+            className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            placeholder={t('checkin.countryPlaceholder')}
             required
           />
         </div>
