@@ -26,9 +26,9 @@ const resources = {
 
 <p>We do not believe there are any negative consequences or risks with this data collection. You can choose to stop taking part at any time.</p>
 
-<p>The project will collect and register your responses, which are anonymous. Your responses and results will be handled so that unauthorized persons cannot access them. The survey responses will be stored securely at Kungliga Tekniska högskolan for 10 years after the project ends.</p>
+<p>The project will collect and register your responses, which are anonymous if you do not choose to share your email address. Your responses and results will be handled so that unauthorized persons cannot access them. The responses will be stored securely at KTH Royal Institute of Technology for 10 years after the project's completion.</p>
 
-<p>You do not have the possibility to access your responses afterwards since the story collection is anonymous. The project will be reported in freely available scientific articles (open access) that you can access by contacting the principal researcher.</p>
+<p>You will not be able to access your responses afterwards if you have not provided your email address, as the data collection is then anonymous. The project will be reported in freely available scientific articles (open access) that you can access by contacting the PhD student.</p>
 
 <h3 style=\"color:#1d4ed8\">Your rights</h3>
 <p>Your participation is voluntary and you can choose to stop participating at any time. If you choose not to participate or want to stop your participation, you do not need to explain why. If you want to stop your participation, you should not submit your story and responses.</p>
@@ -67,7 +67,7 @@ const resources = {
       "cards.intro": "What are the most important questions for you when it comes to the future of education? Select one or more themes that you are interested in and that will inspire your story about the future of education. Alternatively, you can just click 'Write Freely' to write your story without any overarching theme.",
       "cards.error": "Please select at least one theme",
       "writing.title": "Write Your Story",
-      "writing.intro": "Inspired by {{inspiration}}, write a speculative story about the future of AI in education.",
+      "writing.intro": "Inspired by {{inspiration}}, write a speculative story about the future of AI in education. Feel free to write in any language you prefer.",
       "writing.ownVision": "your own vision",
       "writing.placeholder": "In the year 2040, education has transformed in ways we once could only imagine...",
       "writing.wordCount": "Word count: {{count}}",
@@ -174,9 +174,9 @@ const resources = {
 
 <p>Vi anser inte att det finns negativa följder eller risker med denna datainsamling. Du kan när som helst välja att avbryta deltagandet.</p>
 
-<p>Projektet kommer att samla in och registrera dina svar som är anonyma. Dina svar och dina resultat kommer att behandlas så att inte obehöriga kan ta del av dem. Svaren kommer att lagras på ett säkert sätt vid Kungliga Tekniska högskolan under 10 år efter projektets avslut.</p>
+<p>Projektet kommer att samla in och registrera dina svar som är anonyma om du inte väljer att dela din e-postadress. Dina svar och dina resultat kommer att behandlas så att inte obehöriga kan ta del av dem. Svaren kommer att lagras på ett säkert sätt vid Kungliga Tekniska högskolan under 10 år efter projektets avslut.</p>
 
-<p>Du har inte möjlighet att ta del av dina svar i efterhand då berättelseinsamlingen är anonym. Projektet kommer att redovisas i fritt tillgängliga vetenskapliga artiklar (open access) som du har möjlighet att ta del av genom att kontakta projektansvarig.</p>
+<p>Du har inte möjlighet att ta del av dina svar i efterhand om du inte har lämnat din e-postadress, då berättelseinsamlingen då är anonym. Projektet kommer att redovisas i fritt tillgängliga vetenskapliga artiklar (open access) som du har möjlighet att ta del av genom att kontakta projektansvarig.</p>
 
 <h2 style=\"color:#1d4ed8\">Dina rättigheter</h2>
 <p>Ditt deltagande är frivilligt och du kan när som helst välja att avbryta deltagandet. Om du väljer att inte delta eller vill avbryta ditt deltagande behöver du inte uppge varför. Om du vill avbryta ditt deltagande ska du inte skicka in din berättelse och dina svar.</p>
@@ -215,7 +215,7 @@ const resources = {
       "cards.intro": "Vad är du mest intresserad av när det gäller framtidens utbildning? Välj ett eller flera teman som känns intressanta för dig och som kan ge inspiration till din berättelse om hur AI-integrerad utbildning kan se ut i framtiden. Alternativt kan du trycka på 'Skriv fritt' för att skriva din berättelse utan någon tema.",
       "cards.error": "Vänligen välj minst ett tema",
       "writing.title": "Skriv din berättelse",
-      "writing.intro": "Inspirerad av {{inspiration}}, skriv en spekulativ berättelse om AI:s framtid inom utbildning.",
+      "writing.intro": "Inspirerad av {{inspiration}}, skriv en spekulativ berättelse om AI:s framtid inom utbildning. Du kan skriva på vilket språk du vill.",
       "writing.ownVision": "din egen vision",
       "writing.placeholder": "År 2040 har utbildningen förändrats på sätt vi tidigare bara kunnat föreställa oss...",
       "writing.wordCount": "Antal ord: {{count}}",
