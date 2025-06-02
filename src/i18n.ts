@@ -159,15 +159,16 @@ const resources = {
       "and": "och",
       "consent.title": "Samtyckesblankett - Forskningsprojekt",
 "consent.intro": "<span style=\"color:#1d4ed8\"><strong>Att skriva spekulativa berättelser hjälper oss att föreställa oss alternativa – önskade eller oönskade – utbildningsmiljöer eller scenarier. Det kan ge insikter som bidrar till att forma våra nuvarande beslut och perspektiv.</strong></span>",
-"consent.fullText": `<p>Vi vill fråga dig om du vill delta i ett forskningsprojekt genom att skriva en spekulativ berättelse om artificiell intelligens (AI) inom framtidens utbildning.<br/>Forskningshuvudman för projektet är Kungliga Tekniska högskolan. Med forskningshuvudman menas den organisation som är ansvarig för projektet. Forskaren som genomför forskningen är Iosif Gidiotis.</p>
+"consent.fullText": `<p>Vi vill fråga dig om du vill delta i ett forskningsprojekt genom att skriva en kort spekulativ berättelse om artificiell intelligens (AI) inom framtidens utbildning.<br/>Forskningshuvudman för projektet är Kungliga Tekniska högskolan. Med forskningshuvudman menas den organisation som är ansvarig för projektet. Doktoranden som genomför forskningen är Iosif Gidiotis.</p>
 
-<p>Ditt deltagande i projektet innebär: Att skriva en kort spekulativ berättelse (minimum 80 ord) med hjälp av vårt digitala verktyg. Du kommer först att svara på två frågor om din yrkesroll och ditt ämnesområde och sedan välja bland framtidsteman som intresserar dig, innan du skriver din berättelse. Till slut kan du välja att svara på några feedback-frågor. Detta tar ca 15–20 minuter.</p>
+<p>Ditt deltagande i projektet innebär: Att skriva en kort spekulativ berättelse (minimum 80 ord) med hjälp av vårt digitala verktyg. Du kommer först att svara på två frågor om din yrkesroll och ditt ämnesområde och sedan välja bland framtidsteman som intresserar dig, innan du skriver din berättelse. Till slut kan du välja att svara på några feedback-frågor. Detta tar ca 5-25 minuter.</p>
 
 <h2 style=\"color:#1d4ed8\">Vad vi samlar in</h2>
 <ul>
   <li>Din berättelse (lagras utan identifierande information)</li>
   <li>Grundläggande bakgrundsinformation (yrkesroll, ämnesområde)</li>
   <li>E-postadress (frivilligt, endast om du vill delta i framtida forskning)</li>
+  <li>Svar på några feedback-frågor (frivilligt)</li>
 </ul>
 
 <p>Vi anser inte att det finns negativa följder eller risker med denna datainsamling. Du kan när som helst välja att avbryta deltagandet.</p>
@@ -179,19 +180,19 @@ const resources = {
 <h2 style=\"color:#1d4ed8\">Dina rättigheter</h2>
 <p>Ditt deltagande är frivilligt och du kan när som helst välja att avbryta deltagandet. Om du väljer att inte delta eller vill avbryta ditt deltagande behöver du inte uppge varför. Om du vill avbryta ditt deltagande ska du inte skicka in din berättelse och dina svar.</p>
 
-<p>Ansvarig för dina personuppgifter är Kungliga Tekniska högskolan. Om du delar med dig epost-addressen, enligt EU:s dataskyddsförordning har du rätt att kostnadsfritt få ta del av de uppgifter om dig som hanteras i projektet, och vid behov få eventuella fel rättade. Du kan också begära att uppgifter om dig raderas samt att behandlingen av dina personuppgifter begränsas. Rätten till radering och till begränsning av behandling av personuppgifter gäller dock inte när personliga uppgifterna delas inte i systemet (dvs. om du inte ger din epost adress).</p>
+<p>Ansvarig för dina personuppgifter är Kungliga Tekniska högskolan. Om du delar med dig epost-addressen, enligt EU:s dataskyddsförordning har du rätt att kostnadsfritt få ta del av de uppgifter om dig som hanteras i projektet, och vid behov få eventuella fel rättade. Du kan också begära att uppgifter om dig raderas samt att behandlingen av dina personuppgifter begränsas. Rätten till radering och till begränsning av behandling av personuppgifter gäller dock inte när personliga uppgifterna inte delas i systemet (dvs. om du inte ger din epost adress).</p>
 
-<p>Om du har frågor kring uppgifterna ska du kontakta huvudansvarig forskare Iosif Gidiotis, Kungliga Tekniska högskolan, Brinellvägen 68, 114 28 Stockholm, e-post <a href="mailto:gidiotis@kth.se" style="color:#1d4ed8">gidiotis@kth.se</a>.</p>
+<p>Om du har frågor kring uppgifterna ska du kontakta huvudansvarig doktorand Iosif Gidiotis, Kungliga Tekniska högskolan, Brinellvägen 68, 114 28 Stockholm, e-post <a href="mailto:gidiotis@kth.se" style="color:#1d4ed8">gidiotis@kth.se</a>.</p>
 
 <h2 style=\"color:#1d4ed8\">Dataskydd och klagomål</h2>
 <p>Dataskyddsombud nås på Kungliga Tekniska högskolan, Att: Dataskyddsombud, Brinellvägen 8, 100 44 Stockholm, telefon 08-7908752, e-post <a href="mailto:dataskyddsombud@kth.se" style="color:#1d4ed8">dataskyddsombud@kth.se</a>.</p>
 
-<p>Om du är missnöjd med hur dina personuppgifter behandlas har du rätt att ge in klagomål till <a href="https://www.imy.se/" target="_blank" style="color:#1d4ed8">Integritetsskyddsmyndigheten</a>, som är tillsynsmyndighet.</p>
+<p>Om du är missnöjd med hur dina personuppgifter behandlas har du rätt att lämna in klagomål till <a href="https://www.imy.se/" target="_blank" style="color:#1d4ed8">Integritetsskyddsmyndigheten</a>, som är tillsynsmyndighet.</p>
 
 <h2 style=\"color:#1d4ed8\">Kontaktuppgifter</h2>
 <ul>
-  <li><strong>Projektansvarig (Forskare):</strong> <a href="mailto:gidiotis@kth.se" style="color:#1d4ed8">gidiotis@kth.se</a>, Brinellvägen 68, 114 28 Stockholm</li>
-  <li><strong>Huvudhandledare för forskning:</strong> <a href="mailto:stefanhr@kth.se" style="color:#1d4ed8">stefanhr@kth.se</a></li>
+  <li><strong>Projektansvarig (Doktorand): Iosif Gidiotis, KTH </strong> <a href="mailto:gidiotis@kth.se" style="color:#1d4ed8">gidiotis@kth.se</a>, Brinellvägen 68, 114 28 Stockholm</li>
+  <li><strong>Huvudhandledare för forskning: Stefan Hrastinski, KTH </strong> <a href="mailto:stefanhr@kth.se" style="color:#1d4ed8">stefanhr@kth.se</a></li>
 </ul>`,
       "consent.checkbox": "Jag har läst och samtycker till att delta i denna forskningsstudie. Jag förstår hur mina data kommer att användas.",
       "checkin.title": "Incheckning",
