@@ -55,6 +55,7 @@ const CheckInScreen: React.FC = () => {
             <option value="Academic teacher">{t('checkin.academicTeacher')}</option>
             <option value="K12 teacher">{t('checkin.k12Teacher')}</option>
             <option value="Researcher">{t('checkin.researcher')}</option>
+            <option value="PhD student">{t('checkin.phdStudent')}</option>
             <option value="Student">{t('checkin.student')}</option>
             <option value="Other">{t('checkin.other')}</option>
           </select>
