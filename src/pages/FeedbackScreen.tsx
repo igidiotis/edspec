@@ -67,6 +67,7 @@ const FeedbackScreen: React.FC = () => {
       occupation: checkInData.background, // Changed from background
       other_occupation: checkInData.otherBackground, // Changed from other_background
       discipline: checkInData.discipline,
+      country: checkInData.country,
       selected_themes: selectedCards,
       story_content: storyContent,
       wants_interview: formData.wantsInterview,
