@@ -5,7 +5,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 const resources = {
   en: {
     translation: {
-      "appTitle": "Future of AI in Education",
+      "appTitle": "Future of AI in Education - Speculative Futures",
       "footer": "2025 Created by <1>Iosif Gidiotis</1>",
       "swedishVersion": "Access the Swedish version here",
       "continue": "Continue",
@@ -152,7 +152,7 @@ const resources = {
   },
   sv: {
     translation: {
-      "appTitle": "AI och framtidens utbildning",
+      "appTitle": "AI och framtidens utbildning - Spekulativa framtidsscenarier",
       "footer": "2025 Skapad av <1>Iosif Gidiotis</1>",
       "swedishVersion": "Gå till den svenska versionen här",
       "continue": "Fortsätt",
