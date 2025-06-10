@@ -21,8 +21,12 @@ const resources = {
 <ul>
   <li>Your story (stored without identifying information)</li>
   <li>Basic background info (occupation, subject field)</li>
-  <li>Email address (optional, only if you want to participate in future research)</li>
+  <li>Email address (optional, only if you want to participate in future research including interviews or focus group discussions)</li>
 </ul>
+<p><strong>How we analyze your story:</strong>
+The collected stories will be analyzed manually (not with AI tools) through qualitative content analysis to identify participants' ideas, thoughts, concerns and hopes about the future of education. Anonymous quotes from stories may be used in scientific publications as part of the researcher's doctoral thesis.</p>
+<p><strong>Ethical requirements:</strong>
+The project follows KTH's and the Swedish Research Council's ethical guidelines for research, including principles of voluntariness, anonymity and the right to withdraw participation.</p>
 
 <p>We do not believe there are any negative consequences or risks with this data collection. You can choose to stop taking part at any time.</p>
 
@@ -168,9 +172,18 @@ const resources = {
 <ul>
   <li>Din berättelse (lagras utan identifierande information)</li>
   <li>Grundläggande bakgrundsinformation (yrkesroll, ämnesområde)</li>
-  <li>E-postadress (frivilligt, endast om du vill delta i framtida forskning)</li>
+  <li>E-postadress (frivilligt, endast om du vill delta i framtida forskning såsom intervjuer eller fokusgrupper)</li>
   <li>Svar på några feedback-frågor (frivilligt)</li>
 </ul>
+<p><strong>Hur vi analyserar din berättelse:</strong>
+De insamlade berättelserna kommer att analyseras manuellt (inte med AI-verktyg) genom kvalitativ innehållsanalys för att identifiera deltagares idéer, tankar, bekymmer och förhoppningar om framtidens utbildning. Anonyma citat från berättelser kan komma att användas i vetenskapliga publikationer som del av forskarens doktorsavhandling.</p>
+<p> <strong>Etiska krav:</strong>
+Projektet följer KTH:s och svenska forskningsrådets etiska riktlinjer för forskning, inklusive principer om frivillighet, anonymitet och rätten att avbryta deltagande.</p>
+
+<p> <strong>Rätten att avbryta deltagande:</strong>
+Du har rätten att avbryta deltagandet när som helst. Om du väljer att inte delta eller vill avbryta ditt deltagande behöver du inte uppge varför. Om du vill avbryta ditt deltagande ska du inte skicka in din berättelse och dina svar.</p>
+
+<p> <strong>Ansvarig för dina personuppgifter:</strong>
 
 <p>Vi anser inte att det finns negativa följder eller risker med denna datainsamling. Du kan när som helst välja att avbryta deltagandet.</p>
 
