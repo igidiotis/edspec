@@ -1,10 +1,47 @@
-import React from 'react';
-import { CheckCircle } from 'lucide-react';
+import React, { useState } from 'react';
+import { CheckCircle, Share2 } from 'lucide-react';
 import Button from '../components/Button';
+import Toast from '../components/Toast';
 import { useTranslation } from 'react-i18next';
 
 const ThankYouScreen: React.FC = () => {
   const { t } = useTranslation();
+  const [showToast, setShowToast] = useState(false);
+
+  const handleShare = async () => {
+    const shareData = {
+      title: t('appTitle'),
+      text: t('thankyou.shareDescription'),
+      url: window.location.origin
+    };
+
+    if (navigator.share) {
+      // Use native share on mobile devices
+      try {
+        await navigator.share(shareData);
+      } catch (err) {
+        // Share was cancelled or failed
+        console.log('Share cancelled or failed:', err);
+      }
+    } else {
+      // Fallback: copy URL to clipboard
+      try {
+        await navigator.clipboard.writeText(window.location.origin);
+        setShowToast(true);
+      } catch (err) {
+        // Fallback for older browsers
+        console.log('Clipboard API failed, using fallback:', err);
+        const textArea = document.createElement('textarea');
+        textArea.value = window.location.origin;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        setShowToast(true);
+      }
+    }
+  };
+
   return (
     <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-sm p-8 text-center animate-fadeIn">
       <div className="flex justify-center mb-6">
@@ -21,7 +58,14 @@ const ThankYouScreen: React.FC = () => {
           {t('thankyou.nextText')}
         </p>
       </div>
-      <div className="mt-10">
+      <div className="mt-10 space-y-4">
+        <Button 
+          onClick={handleShare}
+          variant="primary"
+        >
+          <Share2 size={16} className="mr-2" />
+          {t('thankyou.share')}
+        </Button>
         <Button 
           onClick={() => window.location.reload()}
           variant="secondary"
@@ -29,6 +73,11 @@ const ThankYouScreen: React.FC = () => {
           {t('thankyou.startOver')}
         </Button>
       </div>
+      <Toast 
+        message={t('thankyou.urlCopied')}
+        isVisible={showToast}
+        onClose={() => setShowToast(false)}
+      />
     </div>
   );
 };
